@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C19890432051063F00590F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890422051063F00590F6C /* AppDelegate.m */; };
+		C19890462051063F00590F6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890452051063F00590F6C /* ViewController.m */; };
+		C19890492051063F00590F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19890472051063F00590F6C /* Main.storyboard */; };
+		C198904B2051063F00590F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C198904A2051063F00590F6C /* Assets.xcassets */; };
+		C198904E2051063F00590F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C198904C2051063F00590F6C /* LaunchScreen.storyboard */; };
+		C19890512051063F00590F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890502051063F00590F6C /* main.m */; };
+		C198905B2051064000590F6C /* KeepCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C198905A2051064000590F6C /* KeepCarTests.m */; };
+		C19890662051064000590F6C /* KeepCarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890652051064000590F6C /* KeepCarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19890572051064000590F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19890362051063E00590F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C198903D2051063F00590F6C;
+			remoteInfo = KeepCar;
+		};
+		C19890622051064000590F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19890362051063E00590F6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C198903D2051063F00590F6C;
+			remoteInfo = KeepCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C198903E2051063F00590F6C /* KeepCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19890412051063F00590F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C19890422051063F00590F6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C19890442051063F00590F6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C19890452051063F00590F6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C19890482051063F00590F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C198904A2051063F00590F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C198904D2051063F00590F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C198904F2051063F00590F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19890502051063F00590F6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C19890562051064000590F6C /* KeepCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C198905A2051064000590F6C /* KeepCarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepCarTests.m; sourceTree = "<group>"; };
+		C198905C2051064000590F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19890612051064000590F6C /* KeepCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeepCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19890652051064000590F6C /* KeepCarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeepCarUITests.m; sourceTree = "<group>"; };
+		C19890672051064000590F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C198903B2051063F00590F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19890532051064000590F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C198905E2051064000590F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C19890352051063E00590F6C = {
+			isa = PBXGroup;
+			children = (
+				C19890402051063F00590F6C /* KeepCar */,
+				C19890592051064000590F6C /* KeepCarTests */,
+				C19890642051064000590F6C /* KeepCarUITests */,
+				C198903F2051063F00590F6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C198903F2051063F00590F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C198903E2051063F00590F6C /* KeepCar.app */,
+				C19890562051064000590F6C /* KeepCarTests.xctest */,
+				C19890612051064000590F6C /* KeepCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19890402051063F00590F6C /* KeepCar */ = {
+			isa = PBXGroup;
+			children = (
+				C19890412051063F00590F6C /* AppDelegate.h */,
+				C19890422051063F00590F6C /* AppDelegate.m */,
+				C19890442051063F00590F6C /* ViewController.h */,
+				C19890452051063F00590F6C /* ViewController.m */,
+				C19890472051063F00590F6C /* Main.storyboard */,
+				C198904A2051063F00590F6C /* Assets.xcassets */,
+				C198904C2051063F00590F6C /* LaunchScreen.storyboard */,
+				C198904F2051063F00590F6C /* Info.plist */,
+				C19890502051063F00590F6C /* main.m */,
+			);
+			path = KeepCar;
+			sourceTree = "<group>";
+		};
+		C19890592051064000590F6C /* KeepCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C198905A2051064000590F6C /* KeepCarTests.m */,
+				C198905C2051064000590F6C /* Info.plist */,
+			);
+			path = KeepCarTests;
+			sourceTree = "<group>";
+		};
+		C19890642051064000590F6C /* KeepCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C19890652051064000590F6C /* KeepCarUITests.m */,
+				C19890672051064000590F6C /* Info.plist */,
+			);
+			path = KeepCarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C198903D2051063F00590F6C /* KeepCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C198906A2051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCar" */;
+			buildPhases = (
+				C198903A2051063F00590F6C /* Sources */,
+				C198903B2051063F00590F6C /* Frameworks */,
+				C198903C2051063F00590F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeepCar;
+			productName = KeepCar;
+			productReference = C198903E2051063F00590F6C /* KeepCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C19890552051064000590F6C /* KeepCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C198906D2051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCarTests" */;
+			buildPhases = (
+				C19890522051064000590F6C /* Sources */,
+				C19890532051064000590F6C /* Frameworks */,
+				C19890542051064000590F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19890582051064000590F6C /* PBXTargetDependency */,
+			);
+			name = KeepCarTests;
+			productName = KeepCarTests;
+			productReference = C19890562051064000590F6C /* KeepCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C19890602051064000590F6C /* KeepCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19890702051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCarUITests" */;
+			buildPhases = (
+				C198905D2051064000590F6C /* Sources */,
+				C198905E2051064000590F6C /* Frameworks */,
+				C198905F2051064000590F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19890632051064000590F6C /* PBXTargetDependency */,
+			);
+			name = KeepCarUITests;
+			productName = KeepCarUITests;
+			productReference = C19890612051064000590F6C /* KeepCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19890362051063E00590F6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Qyh;
+				TargetAttributes = {
+					C198903D2051063F00590F6C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					C19890552051064000590F6C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C198903D2051063F00590F6C;
+					};
+					C19890602051064000590F6C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C198903D2051063F00590F6C;
+					};
+				};
+			};
+			buildConfigurationList = C19890392051063E00590F6C /* Build configuration list for PBXProject "KeepCar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19890352051063E00590F6C;
+			productRefGroup = C198903F2051063F00590F6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C198903D2051063F00590F6C /* KeepCar */,
+				C19890552051064000590F6C /* KeepCarTests */,
+				C19890602051064000590F6C /* KeepCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C198903C2051063F00590F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C198904E2051063F00590F6C /* LaunchScreen.storyboard in Resources */,
+				C198904B2051063F00590F6C /* Assets.xcassets in Resources */,
+				C19890492051063F00590F6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19890542051064000590F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C198905F2051064000590F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C198903A2051063F00590F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19890462051063F00590F6C /* ViewController.m in Sources */,
+				C19890512051063F00590F6C /* main.m in Sources */,
+				C19890432051063F00590F6C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19890522051064000590F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C198905B2051064000590F6C /* KeepCarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C198905D2051064000590F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19890662051064000590F6C /* KeepCarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19890582051064000590F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C198903D2051063F00590F6C /* KeepCar */;
+			targetProxy = C19890572051064000590F6C /* PBXContainerItemProxy */;
+		};
+		C19890632051064000590F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C198903D2051063F00590F6C /* KeepCar */;
+			targetProxy = C19890622051064000590F6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C19890472051063F00590F6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19890482051063F00590F6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C198904C2051063F00590F6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C198904D2051063F00590F6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C19890682051064000590F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C19890692051064000590F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C198906B2051064000590F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KeepCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C198906C2051064000590F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KeepCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C198906E2051064000590F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeepCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepCar.app/KeepCar";
+			};
+			name = Debug;
+		};
+		C198906F2051064000590F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeepCarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeepCar.app/KeepCar";
+			};
+			name = Release;
+		};
+		C19890712051064000590F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeepCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeepCar;
+			};
+			name = Debug;
+		};
+		C19890722051064000590F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KeepCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeepCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19890392051063E00590F6C /* Build configuration list for PBXProject "KeepCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19890682051064000590F6C /* Debug */,
+				C19890692051064000590F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C198906A2051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C198906B2051064000590F6C /* Debug */,
+				C198906C2051064000590F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C198906D2051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C198906E2051064000590F6C /* Debug */,
+				C198906F2051064000590F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19890702051064000590F6C /* Build configuration list for PBXNativeTarget "KeepCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19890712051064000590F6C /* Debug */,
+				C19890722051064000590F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19890362051063E00590F6C /* Project object */;
+}
