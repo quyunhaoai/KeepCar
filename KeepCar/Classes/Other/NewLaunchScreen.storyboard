@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pX7-jC-nTe">
+            <objects>
+                <viewController storyboardIdentifier="NewLaunchScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uam-yo-5BY" customClass="LSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SVc-o1-uDL"/>
+                        <viewControllerLayoutGuide type="bottom" id="e6l-PC-f4q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="trh-no-N64">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_launcher" translatesAutoresizingMaskIntoConstraints="NO" id="tr5-EY-XdO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qba-dV-edR">
+                                <rect key="frame" x="285" y="40" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1IP-PG-eVZ"/>
+                                    <constraint firstAttribute="height" constant="70" id="CXX-ur-Vjc"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-17" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="跳过"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAy-8m-Lqp">
+                                <rect key="frame" x="309" y="75" width="22" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7vl-Ok-RDg"/>
+                                    <constraint firstAttribute="width" constant="22" id="jFC-qa-fse"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tr5-EY-XdO" firstAttribute="leading" secondItem="trh-no-N64" secondAttribute="leading" id="0lC-Mv-toF"/>
+                            <constraint firstAttribute="bottom" secondItem="tr5-EY-XdO" secondAttribute="bottom" id="A3r-N4-TCa"/>
+                            <constraint firstItem="QAy-8m-Lqp" firstAttribute="centerX" secondItem="qba-dV-edR" secondAttribute="centerX" id="SdI-G3-p1a"/>
+                            <constraint firstItem="QAy-8m-Lqp" firstAttribute="bottom" secondItem="qba-dV-edR" secondAttribute="bottom" constant="-15" id="YkE-K9-PMb"/>
+                            <constraint firstAttribute="trailing" secondItem="qba-dV-edR" secondAttribute="trailing" constant="20" id="cwH-xU-uSb"/>
+                            <constraint firstItem="qba-dV-edR" firstAttribute="top" secondItem="SVc-o1-uDL" secondAttribute="bottom" constant="20" id="qIH-aC-wyu"/>
+                            <constraint firstAttribute="trailing" secondItem="tr5-EY-XdO" secondAttribute="trailing" id="sk4-fs-6gb"/>
+                            <constraint firstItem="tr5-EY-XdO" firstAttribute="top" secondItem="trh-no-N64" secondAttribute="top" id="t4m-0l-Ogu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="JumpButton" destination="qba-dV-edR" id="MXL-Vd-BPs"/>
+                        <outlet property="TimeLable" destination="QAy-8m-Lqp" id="50J-fY-X8D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFq-ur-mOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_launcher" width="1280" height="2272"/>
+    </resources>
+</document>

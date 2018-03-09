@@ -33,23 +33,23 @@
 
 -(void)setupChildview{
     
-    QYHFristPageViewController *one = [[QYHFristPageViewController alloc] init];
-    QYHBaseNavigationViewController *nav = [[QYHBaseNavigationViewController alloc] initWithRootViewController:one];
-    one.tabImageNameStr = @"icon_index_normal";
-    one.activeTabImageNameStr = @"icon_index";
-    one.tabTitleStr = @"首页";
+    QYHFristPageViewController *fristPage = [[QYHFristPageViewController alloc] init];
+    QYHBaseNavigationViewController *fristNav = [[QYHBaseNavigationViewController alloc] initWithRootViewController:fristPage];
+    fristPage.tabImageNameStr = @"icon_index_normal";
+    fristPage.activeTabImageNameStr = @"icon_index";
+    fristPage.tabTitleStr = @"首页";
     
-    QYHDynamicStateTableViewController *fiveView = [[QYHDynamicStateTableViewController alloc]init];
-    QYHBaseNavigationViewController *NewNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:fiveView];
-    fiveView.tabImageNameStr = @"icon_order_normal";
-    fiveView.tabTitleStr = @"动态";
-    fiveView.activeTabImageNameStr = @"icon_order";
+    QYHDynamicStateTableViewController *DynsmicState = [[QYHDynamicStateTableViewController alloc]init];
+    QYHBaseNavigationViewController *DynsmicStateNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:DynsmicState];
+    DynsmicState.tabImageNameStr = @"icon_order_normal";
+    DynsmicState.tabTitleStr = @"动态";
+    DynsmicState.activeTabImageNameStr = @"icon_order";
     
-    QYHShoppingcartTableViewController *two = [[QYHShoppingcartTableViewController alloc]init];
-    QYHBaseNavigationViewController *friendNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:two];
-    two.tabImageNameStr = @"icon_cart_normal";
-    two.tabTitleStr = @"购物车";
-    two.activeTabImageNameStr = @"icon_cart";
+    QYHShoppingcartTableViewController *ShoppingVc = [[QYHShoppingcartTableViewController alloc]init];
+    QYHBaseNavigationViewController *ShoppingNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:ShoppingVc];
+    ShoppingVc.tabImageNameStr = @"icon_cart_normal";
+    ShoppingVc.tabTitleStr = @"购物车";
+    ShoppingVc.activeTabImageNameStr = @"icon_cart";
     
     QYHMeTableViewController *me = [[QYHMeTableViewController alloc]init];
     QYHBaseNavigationViewController *meNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:me];
@@ -57,7 +57,7 @@
     me.activeTabImageNameStr = @"icon_mine";
     me.tabTitleStr = @"我";
     
-    [self setViewControllers:[NSMutableArray arrayWithObjects:nav,NewNav,friendNav,meNav,nil]];
+    [self setViewControllers:[NSMutableArray arrayWithObjects:fristNav,DynsmicStateNav,ShoppingNav,meNav,nil]];
 
     [self setHidesBottomBarWhenPushed:YES];
     
@@ -68,6 +68,15 @@
                                   [UIColor clearColor]]];
     [self setTextColor:[UIColor blackColor]];
     [self setSelectedTextColor:[UIColor blueColor]];
+    [self setBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]]];
+    
+    [self setTabEdgeColor:[UIColor clearColor]];
+    [self setTabStrokeColor:[UIColor clearColor]];
+    
+    self.iconGlossyIsHidden = YES;
+    [self setTextColor:[UIColor blackColor]];
+    [self setSelectedTextColor:[UIColor blueColor]];
+    [self setSelectedBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]]];
     
     /*
     
@@ -75,20 +84,15 @@
 //                         [UIColor colorWithRed:0.400 green:1.000 blue:0.400 alpha:1.000]]];
 //    [self setTopEdgeColor:[UIColor blackColor]];
     
-    [self setBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"111111"]]];
-    [self setSelectedBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"111111"]]];
+
 //    [self setBackgroundImageName:nil];
 //
 //    [self setSelectedBackgroundImageName:nil];
     self.tabEdgeColor = [QYHTools hexStringToColor:@"000000"];//分割线
     
   
-    [self setTabEdgeColor:[UIColor clearColor]];
-    [self setTabStrokeColor:[UIColor clearColor]];
-    
-    self.iconGlossyIsHidden = YES;
-    [self setTextColor:[UIColor blackColor]];
-    [self setSelectedTextColor:[UIColor blueColor]];
+
+
     
     //        self.topEdgeColor = [UIColor clearColor];
       /*
