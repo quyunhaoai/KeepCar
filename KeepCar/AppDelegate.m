@@ -7,19 +7,52 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CustomerViewController.h"
+//#import <AFNetworking/AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
+#import "QYHCustomViewController.h"
 @interface AppDelegate ()
-
+{
+        UIView* launchView;
+}
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    /*创建跟控制器和窗口*/
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+    
+    launchView = viewController.view;
+    UILabel *lable = [launchView viewWithTag:11];
+    lable.hidden = NO;
+    UIButton *JumpButton = [launchView viewWithTag:10];
+    [JumpButton addTarget:self action:@selector(removeLauchView) forControlEvents:UIControlEventTouchUpInside];
+    JumpButton.hidden = NO;
+    
+//    CustomerViewController *AdVC = [[CustomerViewController alloc] init];
+//    QYHCustomViewController *AdVC = [[QYHCustomViewController alloc] init];
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.rootViewController = AdVC;
+//    [self.window makeKeyAndVisible];
+    /*开始监控网络状态*/
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    
     return YES;
 }
-
+-(void)removeLauchView
+{
+    QYHCustomViewController *vc = [[QYHCustomViewController alloc] init];
+    
+    [UIApplication sharedApplication].keyWindow.rootViewController = vc;
+    [launchView removeFromSuperview];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

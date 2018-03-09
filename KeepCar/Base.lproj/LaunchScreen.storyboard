@@ -1,25 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LaunchScreen-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="01J-lp-oVM" userLabel="LaunchScreen" customClass="LSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_launcher" translatesAutoresizingMaskIntoConstraints="NO" id="7rs-o8-2qy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-tx-0fL">
+                                <rect key="frame" x="285" y="40" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Ag1-BF-INv"/>
+                                    <constraint firstAttribute="height" constant="70" id="gaM-II-VgQ"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-17" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="跳过"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-Qt-N17">
+                                <rect key="frame" x="309" y="75" width="22" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mCK-Jt-w6k"/>
+                                    <constraint firstAttribute="width" constant="22" id="rro-jE-Ckz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="7rs-o8-2qy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6KU-vO-NrF"/>
+                            <constraint firstItem="S6b-tx-0fL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="9ug-Fo-93W"/>
+                            <constraint firstItem="iJw-Qt-N17" firstAttribute="bottom" secondItem="S6b-tx-0fL" secondAttribute="bottom" constant="-15" id="FfC-Af-eKX"/>
+                            <constraint firstAttribute="bottom" secondItem="7rs-o8-2qy" secondAttribute="bottom" id="Ipa-9R-xWw"/>
+                            <constraint firstAttribute="trailing" secondItem="7rs-o8-2qy" secondAttribute="trailing" id="o9a-YI-qmH"/>
+                            <constraint firstItem="7rs-o8-2qy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tyy-tu-hmV"/>
+                            <constraint firstAttribute="trailing" secondItem="S6b-tx-0fL" secondAttribute="trailing" constant="20" id="woU-gx-f2w"/>
+                            <constraint firstItem="iJw-Qt-N17" firstAttribute="centerX" secondItem="S6b-tx-0fL" secondAttribute="centerX" id="zqP-bx-Xh1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="JumpButton" destination="S6b-tx-0fL" id="sfb-ji-w9c"/>
+                        <outlet property="TimeLable" destination="iJw-Qt-N17" id="owZ-hl-hbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_launcher" width="1280" height="2272"/>
+    </resources>
 </document>

@@ -1,0 +1,64 @@
+//
+//  QYH-PrefixHeader.pch
+//  QYHproject
+//
+//  Created by hao on 2018/1/5.
+//  Copyright © 2018年 hao. All rights reserved.
+//
+/*
+ pch步骤:1.提前编译Pch
+ 
+ 1.存放公用头文件
+ 2.存放公用宏
+ 3.自定义Log
+ */
+#ifndef QYH_PrefixHeader_pch
+
+#define QYH_PrefixHeader_pch
+
+#import "QYHConst.h"
+#import "UIView+frame.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* QYH_PrefixHeader_pch */
+/***********字体*************/
+#define QYHFont(x) [UIFont systemFontOfSize:x]
+#define QYHBoldFont(x) [UIFont boldSystemFontOfSize:x]
+/***********颜色*************/
+#define QYHColor(r,g,b) [UIColor colorWithRed:(r) / 256.0 green:(g) / 256.0 blue:(b) / 256.0 alpha:1]
+#define QYHGrayColor(v) QYHColor(v,v,v)
+#define QYHRandomColor QYHColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+/***********数据存储*************/
+#define QYHAFNWriteToPlist(filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/haobook/Desktop/%@.plist", @#filename] atomically:YES];
+#define QYHUserDefaults [NSUserDefaults standardUserDefaults]
+#define QYHCacheDir [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+#define QYHDocumentDir [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+#define QYHTempDir NSTemporaryDirectory()
+/***********获取硬件信息*************/
+#define QYHScreenW [UIScreen mainScreen].bounds.size.width
+#define QYHScreenH [UIScreen mainScreen].bounds.size.height
+#define QYHCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define QYHCurrentSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+/***********屏幕适配*************/
+#define QYHiPhone4_OR_4s    (QYHScreenH == 480)
+#define QYHiPhone5_OR_5c_OR_5s   (QYHScreenH == 568)
+#define QYHiPhone6_OR_6s   (QYHScreenH == 667)
+#define QYHiPhone6Plus_OR_6sPlus   (QYHScreenH == 736)
+#define QYHiPhoneX (QYHScreenH==812)
+#define QYHiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+/***********GCD*************/
+#define QYHGlobalGCD(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define QYHMainGCD(block) dispatch_async(dispatch_get_main_queue(),block)
+/***********输出*************/
+#define QYHFunc QYHLog(@"%s",__func__)
+
+#ifdef DEBUG // 调试
+
+#define QYHLog(...) NSLog(__VA_ARGS__);
+
+#else // 发布
+
+#define QYHLog(...)
+
+#endif
