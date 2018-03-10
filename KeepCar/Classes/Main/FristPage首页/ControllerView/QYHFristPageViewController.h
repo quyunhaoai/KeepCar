@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "QYHBaseTableViewController.h"
-@interface QYHFristPageViewController : QYHBaseTableViewController
+#import "QYHBaseViewController.h"
+@interface QYHFristPageViewController : QYHBaseViewController
+@property (strong, nonatomic) IBOutlet UITableView *TableView;
 
 @end

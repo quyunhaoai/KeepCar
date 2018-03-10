@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QYHBaseTableViewController.h"
-@interface QYHShoppingcartTableViewController : QYHBaseTableViewController
+#import "QYHBaseViewController.h"
+@interface QYHShoppingcartTableViewController : QYHBaseViewController
 
 @end

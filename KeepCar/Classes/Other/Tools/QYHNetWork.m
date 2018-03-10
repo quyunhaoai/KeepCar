@@ -13,7 +13,7 @@
     static QYHNetWork *manager = nil;
     static dispatch_once_t pred;
     dispatch_once(&pred, ^{
-        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.budejie.com/api/"]];
+        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://keepcar.shanchuang360.cn/"]];
     });
     return manager;
 }

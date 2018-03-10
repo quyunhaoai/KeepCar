@@ -379,100 +379,28 @@ typedef enum {
 - (void)setBadgeValue:(NSString *)badgeValue
        forItemAtIndex:(NSInteger)index {
     AKTab *tab = tabBar.tabs[index];
-    JSCustomBadge *badge = (JSCustomBadge*) [tab viewWithTag:200 + index];
-    
-//    if(!badgeValue || !badgeValue.length || [badgeValue isEqualToString:@"0"]) {
-//        [badge removeFromSuperview];
-//        return;
-//    }
-//
-//    BOOL animateChange = NO;
-//    if(badge) {
-//        [badge autoBadgeSizeWithString:badgeValue];
-//    } else {
-////        if(!self.defaultBadge) {
-////            badge = [JSCustomBadge customBadgeWithString:badgeValue];
-////        } else {
-////            badge = self.defaultBadge;
-//        badge = [JSCustomBadge customBadgeWithString:badgeValue];
-//            [badge autoBadgeSizeWithString:badgeValue];
-////        }
-//        animateChange = YES;
-//    }
-//
-//    int badgeWidth = badge.frame.size.width;
-//    int badgeHeight = badge.frame.size.height;
-//
-//    CGRect tabFrame = tab.frame;
-//
-//    badge.frame = CGRectMake(tabFrame.size.width / 2 + 5, -5,
-//                             badgeWidth, badgeHeight);
-//    badge.tag = 200 + index;
-//
-//    [tab addSubview:badge];
-//    if(animateChange) {
-//        badge.alpha = 0.0;
-//        badge.transform = CGAffineTransformMakeScale(0.2, 0.2);
-//        [UIView animateWithDuration:0.2
-//                         animations:^{
-//                             badge.alpha = 1.0f;
-//                             badge.transform = CGAffineTransformIdentity;
-//                         }];
-//    }
+
+    BOOL animateChange = NO;
+
+
 }
 
 #pragma mark - Required Protocol Method
 
 - (void)tabBar:(AKTabBar *)AKTabBarDelegate didSelectTabAtIndex:(NSInteger)index
 {
+    UIViewController *vc = [self.viewControllers objectAtIndex:index];
     
-//    NSMutableArray *array = [[UXml shareUxml] jiexiXML:@"myxml" two:@"daohang"];
-//    int diCount = 0;
-//    if (array.count <=5) {
-//        diCount = (int)array.count;
-//    }else {
-//        diCount = 4;
-//    }
-//    if (index < diCount) {
-//        UIViewController *vc = (self.viewControllers)[index];
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"tabBarMoreBtnDismiss" object:self];
-//        if ([vc isKindOfClass:[UINavigationController class]]) {
-//            [(UINavigationController *)self.selectedViewController popToRootViewControllerAnimated:NO];
-//        }
-//        if (self.selectedViewController == vc)
-//        {
-//            if ([vc isKindOfClass:[UINavigationController class]]) {
-//                [tabBar setSelectedTab:(tabBar.tabs)[index]];
-//            }
-//        }
-//        else
-//        {
-//            
-//            [[self navigationItem] setTitle:[vc title]];
-//            self.selectedViewController = vc;
-//            
-//        }
-//        
-//        
-//        
-//    }else {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"tabBarMoreBtnClick" object:self];
-////        UIViewController *vc = (self.viewControllers)[index];
-//        
-////        if ([self.delegate respondsToSelector:@selector(tabBarDidSelectTabAtIndex:)]) {
-////            [self.delegate tabBarDidSelectTabAtIndex:index];
-////        }
-//        
-//         [tabBar setSelectedTab:(tabBar.tabs)[index]];
-//    }
-//    if (array.count > 5 && index == 4) {
-//        return;
-//    }
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"tabBarBtnClick" object:self];
-
-    
-
-   
+    if (self.selectedViewController == vc)
+    {
+        if ([vc isKindOfClass:[UINavigationController class]])
+            [(UINavigationController *)self.selectedViewController popToRootViewControllerAnimated:YES];
+    }
+    else
+    {
+        [[self navigationItem] setTitle:[vc title]];
+        self.selectedViewController = vc;
+    }
     
 }
 

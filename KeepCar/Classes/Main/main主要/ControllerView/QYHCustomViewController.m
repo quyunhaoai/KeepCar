@@ -16,7 +16,7 @@
 #import "QYHBaseTableViewController.h"
 
 #import "QYHTools.h"
-@interface QYHCustomViewController ()
+@interface QYHCustomViewController ()<AKTabBarControllerDelegate>
 /** <#注释#> */
 @property (nonatomic,strong) NSMutableArray* Views;
 @end
@@ -74,48 +74,10 @@
     [self setTabStrokeColor:[UIColor clearColor]];
     
     self.iconGlossyIsHidden = YES;
-    [self setTextColor:[UIColor blackColor]];
-    [self setSelectedTextColor:[UIColor blueColor]];
+
     [self setSelectedBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]]];
-    
-    /*
-    
-//    [self setTabColors:@[[UIColor colorWithRed:0.502 green:0.000 blue:0.000 alpha:1.000],
-//                         [UIColor colorWithRed:0.400 green:1.000 blue:0.400 alpha:1.000]]];
-//    [self setTopEdgeColor:[UIColor blackColor]];
-    
+//    self.delegate = self;
 
-//    [self setBackgroundImageName:nil];
-//
-//    [self setSelectedBackgroundImageName:nil];
-    self.tabEdgeColor = [QYHTools hexStringToColor:@"000000"];//分割线
-    
-  
-
-
-    
-    //        self.topEdgeColor = [UIColor clearColor];
-      /*
-    StringsXmlBase *base = [StringsXML getStringXmlBase];
-    self.selectedIconOuterGlowColor = [UIColor clearColor];
-    // Text Color
-    
-    self.iconGlossyIsHidden = YES;
-    [self setTextColor:[HwTools hexStringToColor:base.bMenubarTextcolorNomal]];
-    
-    
-    
-    
-    [self setSelectedTextColor:[HwTools hexStringToColor:base.bMenubarTextcolorActive]];
-    
-    self.defaultBadge = [JSCustomBadge customBadgeWithString:@""
-                                             withStringColor:[UIColor whiteColor]
-                                              withInsetColor:[UIColor redColor]
-                                              withBadgeFrame:YES
-                                         withBadgeFrameColor:[UIColor whiteColor]
-                                                   withScale:1.0f
-                                                 withShining:NO];
-    */
 }
 
 @end

@@ -7,96 +7,67 @@
 //
 
 #import "QYHDynamicStateTableViewController.h"
-
-@interface QYHDynamicStateTableViewController ()
-
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "QYHDynamicstateBassInfo.h"
+#import "QYHDsXqTableViewCell.h"
+#import "QYHDStableInfo.h"
+static NSString *const cellID = @"Dsxiangqing";
+@interface QYHDynamicStateTableViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *DSTableView;
+/** bass */
+@property (nonatomic,strong) QYHDynamicstateBassInfo* bass;
 @end
 
 @implementation QYHDynamicStateTableViewController
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.title = self.tabTitleStr;
+//    self.title = self.tabTitleStr;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self loadData];
+    [self.DSTableView registerNib:[UINib nibWithNibName:NSStringFromClass([QYHDsXqTableViewCell class]) bundle:nil] forCellReuseIdentifier:cellID];
+    MJWeakSelf
+    self.DSTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakSelf loadData];
+    }];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+-(void)loadData{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:@"1" forKey:@"p"];
+    [params setValue:@"1" forKey:@"user_id"];
+    [[QYHNetWork sharedManager] requestWithMethod:GET WithPath:@"/index.php/api.php?m=api&c=Index&a=shequ" WithParams:params WithSuccessBlock:^(NSDictionary *dic) {
+        _bass = [QYHDynamicstateBassInfo mj_objectWithKeyValues:dic];
+//        NSLog(@"%@",_bass.msg);
+//        NSString *tem= _bass.toop.news_title;
+//        NSLog(@"%@",tem);
+////        NSLog(@"%@",_bass.toop);
+//        for (QYHDStableInfo *obj in _bass.date) {
+//            NSLog(@"%@",obj.news_title);
+//        }
+//
+////        NSLog(@"%@",_bass.date[0].addtime);
+        [_bass.date insertObject:_bass.toop atIndex:0];
+        [self.DSTableView reloadData];
+        [self.DSTableView.mj_header endRefreshing];
+    } WithFailurBlock:^(NSError *error) {
+        
+    }];
     
-    // Configure the cell...
     
+}
+#pragma mark TableViewDelegat
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.bass.date.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    QYHDsXqTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    cell.xiangqing = self.bass.date[indexPath.row];
     return cell;
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

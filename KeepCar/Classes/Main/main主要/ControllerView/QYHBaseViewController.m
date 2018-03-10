@@ -13,7 +13,18 @@
 @end
 
 @implementation QYHBaseViewController
+- (NSString *)tabTitle {
+    return self.tabTitleStr;
+}
+- (NSString *)tabImageName
+{
+    return self.tabImageNameStr;
+}
 
+- (NSString *)activeTabImageName
+{
+    return self.activeTabImageNameStr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,13 +55,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationItem.title = self.titleString;
+    self.navigationItem.title = self.tabTitleStr;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.navigationItem.title = @"";
+//    self.navigationItem.title = @"";
 }
 
 - (CGFloat)viewOffsetY

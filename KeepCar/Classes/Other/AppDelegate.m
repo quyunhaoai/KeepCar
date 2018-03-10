@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CustomerViewController.h"
+//#import "CustomerViewController.h"
 //#import <AFNetworking/AFNetworking/AFNetworking.h>
 #import "AFNetworking.h"
 #import "QYHCustomViewController.h"

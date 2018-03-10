@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		C1119670205233A800465933 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C111966F205233A800465933 /* LSViewController.m */; };
 		C111967520523F7900465933 /* icon_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = C111967420523F7800465933 /* icon_launcher.png */; };
+		C11EE7B520538FCE00255902 /* QYHDynamicStateTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11EE7B420538FCD00255902 /* QYHDynamicStateTableViewController.xib */; };
+		C11EE7B82053968B00255902 /* QYHDynamicstateBassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7B72053968B00255902 /* QYHDynamicstateBassInfo.m */; };
+		C11EE7BB205396B300255902 /* QYHDStableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BA205396B300255902 /* QYHDStableInfo.m */; };
+		C11EE7BF20539A8D00255902 /* QYHDsXqTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */; };
+		C11EE7C020539A8D00255902 /* QYHDsXqTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */; };
+		C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */; };
 		C19890432051063F00590F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890422051063F00590F6C /* AppDelegate.m */; };
 		C19890462051063F00590F6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890452051063F00590F6C /* ViewController.m */; };
 		C19890492051063F00590F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19890472051063F00590F6C /* Main.storyboard */; };
@@ -157,6 +163,15 @@
 		C1BD83602052558900947EEC /* NewLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1BD835F2052558900947EEC /* NewLaunchScreen.storyboard */; };
 		C1BD8368205262FD00947EEC /* QYHLonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD8366205262FD00947EEC /* QYHLonginViewController.m */; };
 		C1BD8369205262FD00947EEC /* QYHLonginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1BD8367205262FD00947EEC /* QYHLonginViewController.xib */; };
+		C1BD836C20527B6200947EEC /* QYHFristMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD836B20527B6200947EEC /* QYHFristMode.m */; };
+		C1BD836F2052804500947EEC /* QYHLunbo.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD836E2052804500947EEC /* QYHLunbo.m */; };
+		C1BD83722052806900947EEC /* QYHFrist_types.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD83712052806900947EEC /* QYHFrist_types.m */; };
+		C1BD83752052808400947EEC /* QYHFrist_hot.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BD83742052808400947EEC /* QYHFrist_hot.m */; };
+		C1BD83772052881D00947EEC /* QYHFristPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1BD83762052881D00947EEC /* QYHFristPageViewController.xib */; };
+		C1D13D722052C6DA00B379C7 /* QYHheadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D13D712052C6DA00B379C7 /* QYHheadView.m */; };
+		C1D13D742052C6F000B379C7 /* QYHheadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D13D732052C6F000B379C7 /* QYHheadView.xib */; };
+		C1D13D782052E15A00B379C7 /* QYHCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D13D762052E15A00B379C7 /* QYHCustomTableViewCell.m */; };
+		C1D13D792052E15A00B379C7 /* QYHCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D13D772052E15A00B379C7 /* QYHCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +195,16 @@
 		C111966E205233A800465933 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		C111966F205233A800465933 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		C111967420523F7800465933 /* icon_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_launcher.png; sourceTree = "<group>"; };
+		C11EE7B420538FCD00255902 /* QYHDynamicStateTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHDynamicStateTableViewController.xib; sourceTree = "<group>"; };
+		C11EE7B62053968B00255902 /* QYHDynamicstateBassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHDynamicstateBassInfo.h; sourceTree = "<group>"; };
+		C11EE7B72053968B00255902 /* QYHDynamicstateBassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHDynamicstateBassInfo.m; sourceTree = "<group>"; };
+		C11EE7B9205396B300255902 /* QYHDStableInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHDStableInfo.h; sourceTree = "<group>"; };
+		C11EE7BA205396B300255902 /* QYHDStableInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHDStableInfo.m; sourceTree = "<group>"; };
+		C11EE7BC20539A8D00255902 /* QYHDsXqTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHDsXqTableViewCell.h; sourceTree = "<group>"; };
+		C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHDsXqTableViewCell.m; sourceTree = "<group>"; };
+		C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHDsXqTableViewCell.xib; sourceTree = "<group>"; };
+		C16FA3F52053D0AF00E3FFD8 /* QYHcustomHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHcustomHeadView.h; sourceTree = "<group>"; };
+		C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHcustomHeadView.m; sourceTree = "<group>"; };
 		C198903E2051063F00590F6C /* KeepCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19890412051063F00590F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C19890422051063F00590F6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -473,6 +498,21 @@
 		C1BD8365205262FD00947EEC /* QYHLonginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHLonginViewController.h; sourceTree = "<group>"; };
 		C1BD8366205262FD00947EEC /* QYHLonginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHLonginViewController.m; sourceTree = "<group>"; };
 		C1BD8367205262FD00947EEC /* QYHLonginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHLonginViewController.xib; sourceTree = "<group>"; };
+		C1BD836A20527B6200947EEC /* QYHFristMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHFristMode.h; sourceTree = "<group>"; };
+		C1BD836B20527B6200947EEC /* QYHFristMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHFristMode.m; sourceTree = "<group>"; };
+		C1BD836D2052804500947EEC /* QYHLunbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHLunbo.h; sourceTree = "<group>"; };
+		C1BD836E2052804500947EEC /* QYHLunbo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHLunbo.m; sourceTree = "<group>"; };
+		C1BD83702052806900947EEC /* QYHFrist_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHFrist_types.h; sourceTree = "<group>"; };
+		C1BD83712052806900947EEC /* QYHFrist_types.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHFrist_types.m; sourceTree = "<group>"; };
+		C1BD83732052808400947EEC /* QYHFrist_hot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHFrist_hot.h; sourceTree = "<group>"; };
+		C1BD83742052808400947EEC /* QYHFrist_hot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHFrist_hot.m; sourceTree = "<group>"; };
+		C1BD83762052881D00947EEC /* QYHFristPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHFristPageViewController.xib; sourceTree = "<group>"; };
+		C1D13D702052C6DA00B379C7 /* QYHheadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHheadView.h; sourceTree = "<group>"; };
+		C1D13D712052C6DA00B379C7 /* QYHheadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHheadView.m; sourceTree = "<group>"; };
+		C1D13D732052C6F000B379C7 /* QYHheadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHheadView.xib; sourceTree = "<group>"; };
+		C1D13D752052E15A00B379C7 /* QYHCustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHCustomTableViewCell.h; sourceTree = "<group>"; };
+		C1D13D762052E15A00B379C7 /* QYHCustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHCustomTableViewCell.m; sourceTree = "<group>"; };
+		C1D13D772052E15A00B379C7 /* QYHCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHCustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -660,6 +700,14 @@
 		C198907B2051090800590F6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1BD836A20527B6200947EEC /* QYHFristMode.h */,
+				C1BD836B20527B6200947EEC /* QYHFristMode.m */,
+				C1BD836D2052804500947EEC /* QYHLunbo.h */,
+				C1BD836E2052804500947EEC /* QYHLunbo.m */,
+				C1BD83702052806900947EEC /* QYHFrist_types.h */,
+				C1BD83712052806900947EEC /* QYHFrist_types.m */,
+				C1BD83732052808400947EEC /* QYHFrist_hot.h */,
+				C1BD83742052808400947EEC /* QYHFrist_hot.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -667,6 +715,14 @@
 		C198907C2051094000590F6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1D13D702052C6DA00B379C7 /* QYHheadView.h */,
+				C1D13D712052C6DA00B379C7 /* QYHheadView.m */,
+				C1D13D732052C6F000B379C7 /* QYHheadView.xib */,
+				C1D13D752052E15A00B379C7 /* QYHCustomTableViewCell.h */,
+				C1D13D762052E15A00B379C7 /* QYHCustomTableViewCell.m */,
+				C1D13D772052E15A00B379C7 /* QYHCustomTableViewCell.xib */,
+				C16FA3F52053D0AF00E3FFD8 /* QYHcustomHeadView.h */,
+				C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -676,6 +732,7 @@
 			children = (
 				C1A7AD2220511C2300E78197 /* QYHFristPageViewController.h */,
 				C1A7AD2320511C2300E78197 /* QYHFristPageViewController.m */,
+				C1BD83762052881D00947EEC /* QYHFristPageViewController.xib */,
 			);
 			path = ControllerView;
 			sourceTree = "<group>";
@@ -772,6 +829,10 @@
 		C198908820510A0D00590F6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C11EE7B62053968B00255902 /* QYHDynamicstateBassInfo.h */,
+				C11EE7B72053968B00255902 /* QYHDynamicstateBassInfo.m */,
+				C11EE7B9205396B300255902 /* QYHDStableInfo.h */,
+				C11EE7BA205396B300255902 /* QYHDStableInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -779,6 +840,9 @@
 		C198908920510A0D00590F6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C11EE7BC20539A8D00255902 /* QYHDsXqTableViewCell.h */,
+				C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */,
+				C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -788,6 +852,7 @@
 			children = (
 				C1A7AD1F20511C0500E78197 /* QYHDynamicStateTableViewController.h */,
 				C1A7AD2020511C0500E78197 /* QYHDynamicStateTableViewController.m */,
+				C11EE7B420538FCD00255902 /* QYHDynamicStateTableViewController.xib */,
 			);
 			path = ControllerView;
 			sourceTree = "<group>";
@@ -1385,8 +1450,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198933F2051117600590F6C /* SVProgressHUD.bundle in Resources */,
+				C1D13D792052E15A00B379C7 /* QYHCustomTableViewCell.xib in Resources */,
+				C1D13D742052C6F000B379C7 /* QYHheadView.xib in Resources */,
 				C198933C2051117600590F6C /* LICENSE.txt in Resources */,
 				C19892ED2051117600590F6C /* Info.plist in Resources */,
+				C11EE7B520538FCE00255902 /* QYHDynamicStateTableViewController.xib in Resources */,
+				C11EE7C020539A8D00255902 /* QYHDsXqTableViewCell.xib in Resources */,
 				C19893062051117600590F6C /* QyhAlterView.xib in Resources */,
 				C1BAB17F2051826C006D4E84 /* AKTabBarController.bundle in Resources */,
 				C198933D2051117600590F6C /* README.md in Resources */,
@@ -1401,6 +1470,7 @@
 				C1BD8369205262FD00947EEC /* QYHLonginViewController.xib in Resources */,
 				C111967520523F7900465933 /* icon_launcher.png in Resources */,
 				C19893032051117600590F6C /* README.md in Resources */,
+				C1BD83772052881D00947EEC /* QYHFristPageViewController.xib in Resources */,
 				C19893152051117600590F6C /* MJRefresh.bundle in Resources */,
 				C19890492051063F00590F6C /* Main.storyboard in Resources */,
 			);
@@ -1444,6 +1514,7 @@
 				C19892FB2051117600590F6C /* MJProperty.m in Sources */,
 				C19893A5205112B600590F6C /* SDWebImageManager.m in Sources */,
 				C1A7AD2120511C0500E78197 /* QYHDynamicStateTableViewController.m in Sources */,
+				C11EE7BB205396B300255902 /* QYHDStableInfo.m in Sources */,
 				C1119670205233A800465933 /* LSViewController.m in Sources */,
 				C19893102051117600590F6C /* MJRefreshBackNormalFooter.m in Sources */,
 				C19890B820510C4400590F6C /* UITextField+Placeholder.m in Sources */,
@@ -1461,14 +1532,19 @@
 				C1BD835720524B5C00947EEC /* UIView+SDExtension.m in Sources */,
 				C19890A320510B6D00590F6C /* QYHCustomTabBar.m in Sources */,
 				C198930B2051117600590F6C /* MJRefreshHeader.m in Sources */,
+				C1BD83752052808400947EEC /* QYHFrist_hot.m in Sources */,
 				C19892EA2051117600590F6C /* MBProgressHUD+Add.m in Sources */,
 				C19893A2205112B600590F6C /* SDWebImageDecoder.m in Sources */,
 				C198939F205112B600590F6C /* NSData+ImageContentType.m in Sources */,
 				C19893012051117600590F6C /* NSObject+MJProperty.m in Sources */,
 				C19893AB205112B600590F6C /* UIImageView+WebCache.m in Sources */,
 				C19893A9205112B600590F6C /* UIImage+MultiFormat.m in Sources */,
+				C1BD836C20527B6200947EEC /* QYHFristMode.m in Sources */,
 				C198930A2051117600590F6C /* MJRefreshFooter.m in Sources */,
+				C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */,
 				C1BAB17E2051826C006D4E84 /* AKTabBar.m in Sources */,
+				C1BD836F2052804500947EEC /* QYHLunbo.m in Sources */,
+				C11EE7BF20539A8D00255902 /* QYHDsXqTableViewCell.m in Sources */,
 				C198934C2051117600590F6C /* M13ProgressViewRing.m in Sources */,
 				C19892FD2051117600590F6C /* MJPropertyType.m in Sources */,
 				C19892F52051117600590F6C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -1504,10 +1580,12 @@
 				C19893282051117600590F6C /* UIImageView+AFNetworking.m in Sources */,
 				C198932A2051117600590F6C /* UIRefreshControl+AFNetworking.m in Sources */,
 				C1BD8368205262FD00947EEC /* QYHLonginViewController.m in Sources */,
+				C1BD83722052806900947EEC /* QYHFrist_types.m in Sources */,
 				C198934E2051117600590F6C /* M13ProgressViewSegmentedRing.m in Sources */,
 				C198920420510D7B00590F6C /* QYHConst.m in Sources */,
 				C1BD834020524A1900947EEC /* QYHBaseViewController.m in Sources */,
 				C19892F32051117600590F6C /* MASViewConstraint.m in Sources */,
+				C1D13D782052E15A00B379C7 /* QYHCustomTableViewCell.m in Sources */,
 				C198932B2051117600590F6C /* UIWebView+AFNetworking.m in Sources */,
 				C19893492051117600590F6C /* M13ProgressViewMetroDotPolygon.m in Sources */,
 				C1BAB1812051826C006D4E84 /* AKTabBarView.m in Sources */,
@@ -1517,6 +1595,7 @@
 				C19893002051117600590F6C /* NSObject+MJKeyValue.m in Sources */,
 				C19893092051117600590F6C /* MJRefreshComponent.m in Sources */,
 				C1A7AD622051411600E78197 /* QYHTools.m in Sources */,
+				C11EE7B82053968B00255902 /* QYHDynamicstateBassInfo.m in Sources */,
 				C19893A1205112B600590F6C /* SDWebImageCompat.m in Sources */,
 				C19893A7205112B600590F6C /* UIButton+WebCache.m in Sources */,
 				C198931F2051117600590F6C /* AFURLResponseSerialization.m in Sources */,
@@ -1530,6 +1609,7 @@
 				C198933E2051117600590F6C /* SVIndefiniteAnimatedView.m in Sources */,
 				C19892F62051117600590F6C /* View+MASAdditions.m in Sources */,
 				C19890A220510B6D00590F6C /* QYHbutton.m in Sources */,
+				C1D13D722052C6DA00B379C7 /* QYHheadView.m in Sources */,
 				C19893122051117600590F6C /* MJRefreshGifHeader.m in Sources */,
 				C19893A8205112B600590F6C /* UIImage+GIF.m in Sources */,
 				C19892EB2051117600590F6C /* MBProgressHUD.m in Sources */,

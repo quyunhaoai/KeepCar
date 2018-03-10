@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QYHBaseTableViewController.h"
-@interface QYHDynamicStateTableViewController : QYHBaseTableViewController
+#import "QYHBaseViewController.h"
+@interface QYHDynamicStateTableViewController : QYHBaseViewController
 
 @end

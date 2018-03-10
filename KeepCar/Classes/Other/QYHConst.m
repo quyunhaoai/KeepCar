@@ -21,7 +21,7 @@ CGFloat const QYHTitlesViewH = 35;
 CGFloat const QYHMarin = 5;
 
 /** 统一的一个请求路径 */
-NSString  * const QYHCommonURL = @"http://api.budejie.com/api/api_open.php";
+NSString  * const QYHCommonURL = @"http://keepcar.shanchuang360.cn/";
 
 /** TabBarButton被重复点击的通知 */
 NSString  * const QYHTabBarButtonDidRepeatClickNotification = @"QYHTabBarButtonDidRepeatClickNotification";
