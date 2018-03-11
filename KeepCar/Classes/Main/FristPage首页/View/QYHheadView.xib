@@ -5,36 +5,23 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13771"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QYHheadView"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QYHheadView">
-            <rect key="frame" x="0.0" y="0.0" width="524" height="490"/>
+            <rect key="frame" x="0.0" y="0.0" width="524" height="445"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3Q-8l-vXI">
-                    <rect key="frame" x="0.0" y="0.0" width="524" height="245"/>
+                    <rect key="frame" x="0.0" y="0.0" width="524" height="222.5"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-vl-3Is">
-                    <rect key="frame" x="0.0" y="245" width="524" height="245"/>
-                    <subviews>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="t8o-nu-p09">
-                            <rect key="frame" x="0.0" y="0.0" width="524" height="245"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <collectionViewLayout key="collectionViewLayout" id="OIh-qe-kxl"/>
-                        </collectionView>
-                    </subviews>
+                    <rect key="frame" x="0.0" y="222.5" width="524" height="222.5"/>
                     <color key="backgroundColor" red="0.17068665550000001" green="0.75898012910000001" blue="0.22044035270000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="t8o-nu-p09" secondAttribute="trailing" id="6OB-rq-DrC"/>
-                        <constraint firstItem="t8o-nu-p09" firstAttribute="leading" secondItem="qgQ-vl-3Is" secondAttribute="leading" id="l0q-VE-Tbs"/>
-                        <constraint firstAttribute="bottom" secondItem="t8o-nu-p09" secondAttribute="bottom" id="nxD-Zp-4uh"/>
-                        <constraint firstItem="t8o-nu-p09" firstAttribute="top" secondItem="qgQ-vl-3Is" secondAttribute="top" id="z5Z-Nx-iPh"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -8,6 +8,8 @@
 
 #import "QYHheadView.h"
 #import "QYHTools.h"
+#import "QYHFrist_types.h"
+#import "UIImage+Image.h"
 @implementation QYHheadView
 -(instancetype)initWithFrame:(CGRect)frame
 {
@@ -40,11 +42,36 @@
     self.cycleScrollView.pageControlDotSize = CGSizeMake(100, 80);
     self.cycleScrollView.pageControlBottomOffset = 1.0;
     [self.lubo addSubview:self.cycleScrollView];
- 
+    NSLog(@"%@",NSStringFromCGRect(self.lubo.frame));
+    NSLog(@"%@",NSStringFromCGRect(self.Types.frame));
 }
 -(void)setUrlArray:(NSArray *)urlArray
 {
     _urlArray = urlArray;
     self.cycleScrollView.imageURLStringsGroup = urlArray;
+}
+-(void)setTypesArray:(NSArray *)TypesArray
+{
+    _TypesArray = TypesArray;
+//    for (QYHFrist_types *type in TypesArray) {
+//
+//    }
+//    [TypesArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        QYHFrist_types *type = (QYHFrist_types *)obj;
+//        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//        button.tag = idx;
+//        button.frame =CGRectMake(0, 0, 60, 60);
+//        [button setImage:nil forState:UIControlStateNormal];
+//        [self.Types addSubview:button];
+//    }];
+}
+-(void)layoutSubviews
+{
+    NSLog(@"%s",__FUNCTION__);
+    NSLog(@"lubo:%@",NSStringFromCGRect(self.lubo.frame));
+    NSLog(@"types:%@",NSStringFromCGRect(self.Types.frame));
+    NSLog(@"self:%@",NSStringFromCGRect(self.frame));
+    self.lubo.qyh_height = 245.0;
+    self.Types.qyh_height = 245.0;
 }
 @end

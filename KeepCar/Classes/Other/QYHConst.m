@@ -28,5 +28,5 @@ NSString  * const QYHTabBarButtonDidRepeatClickNotification = @"QYHTabBarButtonD
 
 /** TitleButton被重复点击的通知 */
 NSString  * const QYHTitleButtonDidRepeatClickNotification = @"QYHTitleButtonDidRepeatClickNotification";
-
-
+/** 全局统一tableviewHeadview的间距 */
+CGFloat const QYHHeadMarin =10;

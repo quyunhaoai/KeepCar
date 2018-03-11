@@ -29,3 +29,5 @@ UIKIT_EXTERN NSString  * const QYHTabBarButtonDidRepeatClickNotification;
 /** TitleButton被重复点击的通知 */
 UIKIT_EXTERN NSString  * const QYHTitleButtonDidRepeatClickNotification;
 
+/** 全局统一tableviewHeadview的间距 */
+UIKIT_EXTERN CGFloat const QYHHeadMarin;

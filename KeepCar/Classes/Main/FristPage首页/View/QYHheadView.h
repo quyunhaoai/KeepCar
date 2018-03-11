@@ -13,5 +13,5 @@
 @property (strong, nonatomic) IBOutlet UIView *Types;
 @property (strong, nonatomic) NSArray *urlArray;
 @property (strong, nonatomic) SDCycleScrollView *cycleScrollView;
-
+@property (strong, nonatomic) NSArray *TypesArray;
 @end

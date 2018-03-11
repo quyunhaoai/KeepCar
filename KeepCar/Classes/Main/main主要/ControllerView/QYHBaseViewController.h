@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QYHNetWork.h"
 #import "QYHTools.h"
+#import "UIView+Toast.h"
 @interface QYHBaseViewController : UIViewController
 
 @property (nonatomic, strong) NSString *titleString;

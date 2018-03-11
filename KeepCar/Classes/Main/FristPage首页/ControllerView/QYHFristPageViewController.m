@@ -14,12 +14,21 @@
 #import "QYHheadView.h"
 #import "MJRefresh.h"
 #import "QYHCustomTableViewCell.h"
+#import "CustomCollectionViewCell.h"
+#import "QYHFrist_types.h"
 NSString *const cellID = @"hao";
-@interface QYHFristPageViewController ()<UITableViewDelegate,UITableViewDataSource>
-/** <#注释#> */
+static NSString *const ID = @"cellid";
+static NSInteger const  cols = 4;
+static CGFloat const mar = 1;
+CGFloat const qyhItemH = 100;
+#define itemKH     ([UIScreen mainScreen].bounds.size.width - (cols - mar))/cols
+@interface QYHFristPageViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
+/** headview */
 @property (nonatomic,strong) QYHheadView* headView;
-/** <#注释#> */
+/** mode */
 @property (nonatomic,strong) QYHFristMode* fristMode;
+
+@property (nonatomic,strong) UICollectionView *collection;
 @end
 
 @implementation QYHFristPageViewController
@@ -32,6 +41,10 @@ NSString *const cellID = @"hao";
         [self presentViewController:loginVC animated:YES completion:nil];
     }
 }
+-(void)viewDidLayoutSubviews
+{
+    NSLog(@"headView:%@",NSStringFromCGRect(self.headView.frame));
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,11 +52,13 @@ NSString *const cellID = @"hao";
     _headView= [QYHheadView qyh_viewFromXib];
     self.TableView.tableHeaderView = _headView;
     [self.TableView registerNib:[UINib nibWithNibName:@"QYHCustomTableViewCell" bundle:nil] forCellReuseIdentifier:cellID];
+    [self setupTypesView];
     __weak typeof (self) weakSelf = self;
     self.TableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
         [weakSelf loadData];
     }];
+    self.TableView.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
 }
 -(void)loadData
 {
@@ -58,12 +73,23 @@ NSString *const cellID = @"hao";
             [mutableArray addObject:temUrl];
         }
         _headView.urlArray = mutableArray;
-        
+        if ((self.fristMode.types.count % 4)  != 0) {
+            int a = (self.fristMode.types.count % 4);
+            for (int i = 0; i<a; i++) {
+                QYHFrist_types *type = [[QYHFrist_types alloc]init];
+                type.type_title = @"";
+                type.url_link = @"";
+                type.thumb = @"";
+                [self.fristMode.types addObject:type];
+            }
+        }
         [self.TableView reloadData];
-        
+        [self.collection reloadData];
         [self.TableView.mj_header endRefreshing];
     } WithFailurBlock:^(NSError *error) {
         NSLog(@"error=%@",error);
+//        [self.view showToast:self.view duration:2.0 position:@"center"];
+        [self.view makeToast:@"网络加载失败" duration:2.0 position:@"bottom"];
     }];
 }
 #pragma mark TableView_delegate
@@ -80,5 +106,85 @@ NSString *const cellID = @"hao";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 76.0;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return 490.0;
+//}
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
+{
+    return 445.0f;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return QYHHeadMarin;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.0;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc]init];
+    view.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
+    return view;
+}
+-(void)setupTypesView
+{
+    /*
+     1.初始化要设置流水布局
+     2.cell必须要注册
+     3.cell必须自定义
+     */
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    NSInteger number = 4;
+    CGFloat margin = 1;
+    CGFloat itmesWH = ([UIScreen mainScreen].bounds.size.width)/number;
+    
+    layout.itemSize = CGSizeMake(itmesWH, qyhItemH);
+    
+    layout.minimumLineSpacing = margin;
+    layout.minimumInteritemSpacing = 0;
+    
+    UICollectionView *collectionview = [[UICollectionView alloc]initWithFrame:self.headView.Types.bounds collectionViewLayout:layout];
+    
+    collectionview.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
+    collectionview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.headView.Types addSubview: collectionview];
+    
+    collectionview.delegate = self;
+    collectionview.dataSource = self;
+    collectionview.scrollEnabled = NO;
+    
+    [collectionview registerNib:[UINib nibWithNibName:NSStringFromClass([CustomCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:ID];
+    self.collection = collectionview;
+    /**
+     _CollectionData = [NSMutableArray array];
+     for (int i = 0; i < 12; i ++) {
+     person *head = [[person alloc] init];
+     head.iconUrl = @"defaultUserIcon";
+     head.name = [NSString stringWithFormat:@"qyh%d",i];
+     [_CollectionData addObject:head];
+     }
+     **/
+}
+#pragma mark UIcollectionViewDataSource
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.fristMode.types.count;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    cell.Head = self.fristMode.types[indexPath.row];
+    return cell;
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s",__FUNCTION__);    
 }
 @end

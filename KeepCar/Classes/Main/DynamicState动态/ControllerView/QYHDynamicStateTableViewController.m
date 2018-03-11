@@ -53,7 +53,7 @@ static NSString *const cellID = @"Dsxiangqing";
         [self.DSTableView reloadData];
         [self.DSTableView.mj_header endRefreshing];
     } WithFailurBlock:^(NSError *error) {
-        
+        [self.view makeToast:@"网络加载失败" duration:2.0 position:@"bottom"];
     }];
     
     
@@ -69,5 +69,12 @@ static NSString *const cellID = @"Dsxiangqing";
     cell.xiangqing = self.bass.date[indexPath.row];
     return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 92.0f;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end

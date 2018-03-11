@@ -14,7 +14,7 @@
 
 #import "QYHBaseNavigationViewController.h"
 #import "QYHBaseTableViewController.h"
-
+#import "MeTableViewController.h"
 #import "QYHTools.h"
 @interface QYHCustomViewController ()<AKTabBarControllerDelegate>
 /** <#注释#> */
@@ -33,7 +33,7 @@
 
 -(void)setupChildview{
     
-    QYHFristPageViewController *fristPage = [[QYHFristPageViewController alloc] init];
+    QYHFristPageViewController *fristPage = [[QYHFristPageViewController alloc] initWithNibName:@"QYHFristPageViewController" bundle:nil];
     QYHBaseNavigationViewController *fristNav = [[QYHBaseNavigationViewController alloc] initWithRootViewController:fristPage];
     fristPage.tabImageNameStr = @"icon_index_normal";
     fristPage.activeTabImageNameStr = @"icon_index";
@@ -51,11 +51,13 @@
     ShoppingVc.tabTitleStr = @"购物车";
     ShoppingVc.activeTabImageNameStr = @"icon_cart";
     
-    QYHMeTableViewController *me = [[QYHMeTableViewController alloc]init];
+//    QYHMeTableViewController *me = [[QYHMeTableViewController alloc]init];
+    UIStoryboard *MainStory = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MeTableViewController *me = [MainStory instantiateViewControllerWithIdentifier:@"MeTableView"];
     QYHBaseNavigationViewController *meNav = [[QYHBaseNavigationViewController alloc]initWithRootViewController:me];
     me.tabImageNameStr = @"icon_mine_normal";
     me.activeTabImageNameStr = @"icon_mine";
-    me.tabTitleStr = @"我";
+    me.tabTitleStr = @"我的";
     
     [self setViewControllers:[NSMutableArray arrayWithObjects:fristNav,DynsmicStateNav,ShoppingNav,meNav,nil]];
 

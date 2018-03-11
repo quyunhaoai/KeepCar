@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		C1119670205233A800465933 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C111966F205233A800465933 /* LSViewController.m */; };
 		C111967520523F7900465933 /* icon_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = C111967420523F7800465933 /* icon_launcher.png */; };
+		C119C7322054FE120012E737 /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C119C7312054FE120012E737 /* MeTableViewController.m */; };
 		C11EE7B520538FCE00255902 /* QYHDynamicStateTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11EE7B420538FCD00255902 /* QYHDynamicStateTableViewController.xib */; };
 		C11EE7B82053968B00255902 /* QYHDynamicstateBassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7B72053968B00255902 /* QYHDynamicstateBassInfo.m */; };
 		C11EE7BB205396B300255902 /* QYHDStableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BA205396B300255902 /* QYHDStableInfo.m */; };
 		C11EE7BF20539A8D00255902 /* QYHDsXqTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */; };
 		C11EE7C020539A8D00255902 /* QYHDsXqTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */; };
 		C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */; };
+		C16FA3FB2053E38000E3FFD8 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */; };
+		C16FA3FC2053E38000E3FFD8 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */; };
 		C19890432051063F00590F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890422051063F00590F6C /* AppDelegate.m */; };
 		C19890462051063F00590F6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890452051063F00590F6C /* ViewController.m */; };
 		C19890492051063F00590F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19890472051063F00590F6C /* Main.storyboard */; };
@@ -195,6 +198,8 @@
 		C111966E205233A800465933 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		C111966F205233A800465933 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		C111967420523F7800465933 /* icon_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_launcher.png; sourceTree = "<group>"; };
+		C119C7302054FE120012E737 /* MeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
+		C119C7312054FE120012E737 /* MeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
 		C11EE7B420538FCD00255902 /* QYHDynamicStateTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHDynamicStateTableViewController.xib; sourceTree = "<group>"; };
 		C11EE7B62053968B00255902 /* QYHDynamicstateBassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHDynamicstateBassInfo.h; sourceTree = "<group>"; };
 		C11EE7B72053968B00255902 /* QYHDynamicstateBassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHDynamicstateBassInfo.m; sourceTree = "<group>"; };
@@ -205,6 +210,9 @@
 		C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHDsXqTableViewCell.xib; sourceTree = "<group>"; };
 		C16FA3F52053D0AF00E3FFD8 /* QYHcustomHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHcustomHeadView.h; sourceTree = "<group>"; };
 		C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHcustomHeadView.m; sourceTree = "<group>"; };
+		C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		C16FA3F92053E38000E3FFD8 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		C198903E2051063F00590F6C /* KeepCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19890412051063F00590F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C19890422051063F00590F6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -715,6 +723,9 @@
 		C198907C2051094000590F6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C16FA3F92053E38000E3FFD8 /* CustomCollectionViewCell.h */,
+				C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */,
+				C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */,
 				C1D13D702052C6DA00B379C7 /* QYHheadView.h */,
 				C1D13D712052C6DA00B379C7 /* QYHheadView.m */,
 				C1D13D732052C6F000B379C7 /* QYHheadView.xib */,
@@ -797,6 +808,8 @@
 		C1989084205109FB00590F6C /* ControllerView */ = {
 			isa = PBXGroup;
 			children = (
+				C119C7302054FE120012E737 /* MeTableViewController.h */,
+				C119C7312054FE120012E737 /* MeTableViewController.m */,
 				C1A7AD1920511B7C00E78197 /* QYHMeTableViewController.h */,
 				C1A7AD1A20511B7C00E78197 /* QYHMeTableViewController.m */,
 			);
@@ -1457,6 +1470,7 @@
 				C11EE7B520538FCE00255902 /* QYHDynamicStateTableViewController.xib in Resources */,
 				C11EE7C020539A8D00255902 /* QYHDsXqTableViewCell.xib in Resources */,
 				C19893062051117600590F6C /* QyhAlterView.xib in Resources */,
+				C16FA3FC2053E38000E3FFD8 /* CustomCollectionViewCell.xib in Resources */,
 				C1BAB17F2051826C006D4E84 /* AKTabBarController.bundle in Resources */,
 				C198933D2051117600590F6C /* README.md in Resources */,
 				C19892F82051117600590F6C /* LICENSE in Resources */,
@@ -1574,6 +1588,7 @@
 				C198931B2051117600590F6C /* AFHTTPSessionManager.m in Sources */,
 				C19893112051117600590F6C /* MJRefreshBackStateFooter.m in Sources */,
 				C1A7AD612051411600E78197 /* QYHNetWork.m in Sources */,
+				C119C7322054FE120012E737 /* MeTableViewController.m in Sources */,
 				C19893462051117600590F6C /* M13ProgressViewImage.m in Sources */,
 				C198934D2051117600590F6C /* M13ProgressViewSegmentedBar.m in Sources */,
 				C19892F92051117600590F6C /* MJExtensionConst.m in Sources */,
@@ -1620,6 +1635,7 @@
 				C1BD835520524B5C00947EEC /* SDCollectionViewCell.m in Sources */,
 				C19893042051117600590F6C /* JKCountDownButton.m in Sources */,
 				C19893022051117600590F6C /* NSString+MJExtension.m in Sources */,
+				C16FA3FB2053E38000E3FFD8 /* CustomCollectionViewCell.m in Sources */,
 				C198931E2051117600590F6C /* AFURLRequestSerialization.m in Sources */,
 				C1BAB1842051826C006D4E84 /* UIViewController+AKTabBarController.m in Sources */,
 				C19893A4205112B600590F6C /* SDWebImageDownloaderOperation.m in Sources */,
