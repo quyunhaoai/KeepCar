@@ -15,6 +15,12 @@
 		C11EE7BB205396B300255902 /* QYHDStableInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BA205396B300255902 /* QYHDStableInfo.m */; };
 		C11EE7BF20539A8D00255902 /* QYHDsXqTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */; };
 		C11EE7C020539A8D00255902 /* QYHDsXqTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */; };
+		C16388DC20556FBE00A98D1C /* PPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388D720556FBD00A98D1C /* PPTableViewCell.m */; };
+		C16388DD20556FBE00A98D1C /* PPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16388D820556FBD00A98D1C /* PPTableViewCell.xib */; };
+		C16388DE20556FBE00A98D1C /* PPNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388DB20556FBE00A98D1C /* PPNumberButton.m */; };
+		C16388E02055704B00A98D1C /* QYHShoppingcartTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16388DF2055704B00A98D1C /* QYHShoppingcartTableViewController.xib */; };
+		C16388E3205577D800A98D1C /* QYHShoppingCartBasseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388E2205577D800A98D1C /* QYHShoppingCartBasseMode.m */; };
+		C16388E6205577F200A98D1C /* QYHShoppingListMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388E5205577F200A98D1C /* QYHShoppingListMode.m */; };
 		C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */; };
 		C16FA3FB2053E38000E3FFD8 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */; };
 		C16FA3FC2053E38000E3FFD8 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */; };
@@ -208,6 +214,16 @@
 		C11EE7BC20539A8D00255902 /* QYHDsXqTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHDsXqTableViewCell.h; sourceTree = "<group>"; };
 		C11EE7BD20539A8D00255902 /* QYHDsXqTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHDsXqTableViewCell.m; sourceTree = "<group>"; };
 		C11EE7BE20539A8D00255902 /* QYHDsXqTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHDsXqTableViewCell.xib; sourceTree = "<group>"; };
+		C16388D620556FBD00A98D1C /* PPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTableViewCell.h; sourceTree = "<group>"; };
+		C16388D720556FBD00A98D1C /* PPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTableViewCell.m; sourceTree = "<group>"; };
+		C16388D820556FBD00A98D1C /* PPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPTableViewCell.xib; sourceTree = "<group>"; };
+		C16388DA20556FBE00A98D1C /* PPNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNumberButton.h; sourceTree = "<group>"; };
+		C16388DB20556FBE00A98D1C /* PPNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNumberButton.m; sourceTree = "<group>"; };
+		C16388DF2055704B00A98D1C /* QYHShoppingcartTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHShoppingcartTableViewController.xib; sourceTree = "<group>"; };
+		C16388E1205577D800A98D1C /* QYHShoppingCartBasseMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHShoppingCartBasseMode.h; sourceTree = "<group>"; };
+		C16388E2205577D800A98D1C /* QYHShoppingCartBasseMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHShoppingCartBasseMode.m; sourceTree = "<group>"; };
+		C16388E4205577F200A98D1C /* QYHShoppingListMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHShoppingListMode.h; sourceTree = "<group>"; };
+		C16388E5205577F200A98D1C /* QYHShoppingListMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHShoppingListMode.m; sourceTree = "<group>"; };
 		C16FA3F52053D0AF00E3FFD8 /* QYHcustomHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHcustomHeadView.h; sourceTree = "<group>"; };
 		C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHcustomHeadView.m; sourceTree = "<group>"; };
 		C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
@@ -550,6 +566,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C16388D520556FBD00A98D1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16388D620556FBD00A98D1C /* PPTableViewCell.h */,
+				C16388D720556FBD00A98D1C /* PPTableViewCell.m */,
+				C16388D820556FBD00A98D1C /* PPTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C16388D920556FBE00A98D1C /* PPNumberButton */ = {
+			isa = PBXGroup;
+			children = (
+				C16388DA20556FBE00A98D1C /* PPNumberButton.h */,
+				C16388DB20556FBE00A98D1C /* PPNumberButton.m */,
+			);
+			path = PPNumberButton;
+			sourceTree = "<group>";
+		};
 		C19890352051063E00590F6C = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +856,7 @@
 			children = (
 				C1A7AD1C20511BC200E78197 /* QYHShoppingcartTableViewController.h */,
 				C1A7AD1D20511BC200E78197 /* QYHShoppingcartTableViewController.m */,
+				C16388DF2055704B00A98D1C /* QYHShoppingcartTableViewController.xib */,
 			);
 			path = ControllerView;
 			sourceTree = "<group>";
@@ -828,6 +864,10 @@
 		C198908620510A0500590F6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C16388E1205577D800A98D1C /* QYHShoppingCartBasseMode.h */,
+				C16388E2205577D800A98D1C /* QYHShoppingCartBasseMode.m */,
+				C16388E4205577F200A98D1C /* QYHShoppingListMode.h */,
+				C16388E5205577F200A98D1C /* QYHShoppingListMode.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -835,6 +875,8 @@
 		C198908720510A0500590F6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C16388D920556FBE00A98D1C /* PPNumberButton */,
+				C16388D520556FBD00A98D1C /* View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1473,8 +1515,10 @@
 				C16FA3FC2053E38000E3FFD8 /* CustomCollectionViewCell.xib in Resources */,
 				C1BAB17F2051826C006D4E84 /* AKTabBarController.bundle in Resources */,
 				C198933D2051117600590F6C /* README.md in Resources */,
+				C16388DD20556FBE00A98D1C /* PPTableViewCell.xib in Resources */,
 				C19892F82051117600590F6C /* LICENSE in Resources */,
 				C1BD835E205250BE00947EEC /* LaunchScreen.storyboard in Resources */,
+				C16388E02055704B00A98D1C /* QYHShoppingcartTableViewController.xib in Resources */,
 				C19893212051117600590F6C /* LICENSE in Resources */,
 				C19893222051117600590F6C /* README.md in Resources */,
 				C1BD83602052558900947EEC /* NewLaunchScreen.storyboard in Resources */,
@@ -1515,6 +1559,7 @@
 				C1BD835320524B5C00947EEC /* TADotView.m in Sources */,
 				C19893142051117600590F6C /* MJRefreshStateHeader.m in Sources */,
 				C19893172051117600590F6C /* NSBundle+MJRefresh.m in Sources */,
+				C16388E6205577F200A98D1C /* QYHShoppingListMode.m in Sources */,
 				C19893132051117600590F6C /* MJRefreshNormalHeader.m in Sources */,
 				C19893242051117600590F6C /* AFImageDownloader.m in Sources */,
 				C198909C20510B6000590F6C /* QYHBaseNavigationViewController.m in Sources */,
@@ -1551,9 +1596,11 @@
 				C19893A2205112B600590F6C /* SDWebImageDecoder.m in Sources */,
 				C198939F205112B600590F6C /* NSData+ImageContentType.m in Sources */,
 				C19893012051117600590F6C /* NSObject+MJProperty.m in Sources */,
+				C16388E3205577D800A98D1C /* QYHShoppingCartBasseMode.m in Sources */,
 				C19893AB205112B600590F6C /* UIImageView+WebCache.m in Sources */,
 				C19893A9205112B600590F6C /* UIImage+MultiFormat.m in Sources */,
 				C1BD836C20527B6200947EEC /* QYHFristMode.m in Sources */,
+				C16388DC20556FBE00A98D1C /* PPTableViewCell.m in Sources */,
 				C198930A2051117600590F6C /* MJRefreshFooter.m in Sources */,
 				C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */,
 				C1BAB17E2051826C006D4E84 /* AKTabBar.m in Sources */,
@@ -1599,6 +1646,7 @@
 				C198934E2051117600590F6C /* M13ProgressViewSegmentedRing.m in Sources */,
 				C198920420510D7B00590F6C /* QYHConst.m in Sources */,
 				C1BD834020524A1900947EEC /* QYHBaseViewController.m in Sources */,
+				C16388DE20556FBE00A98D1C /* PPNumberButton.m in Sources */,
 				C19892F32051117600590F6C /* MASViewConstraint.m in Sources */,
 				C1D13D782052E15A00B379C7 /* QYHCustomTableViewCell.m in Sources */,
 				C198932B2051117600590F6C /* UIWebView+AFNetworking.m in Sources */,

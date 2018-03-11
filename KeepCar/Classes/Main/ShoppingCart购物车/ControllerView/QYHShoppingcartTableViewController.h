@@ -10,5 +10,7 @@
 #import "QYHBaseTableViewController.h"
 #import "QYHBaseViewController.h"
 @interface QYHShoppingcartTableViewController : QYHBaseViewController
+@property (strong, nonatomic) IBOutlet UITableView *ShoppingTable;
+@property (strong, nonatomic) IBOutlet UIView *BottomView;
 
 @end
