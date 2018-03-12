@@ -29,13 +29,12 @@
 -(void)setHead:(QYHFrist_types *)Head
 {
     _Head = Head;
-//    UIImage *image = [UIImage imageNamed:@""];
     [self.headimage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",QYHCommonURL,Head.thumb]]];
     self.name.text = Head.type_title;
 }
 -(void)layoutSubviews
 {
-    NSLog(@"headimage:%@",NSStringFromCGRect(self.headimage.frame));
-    NSLog(@"name:%@",NSStringFromCGRect(self.name.frame));
+//    NSLog(@"headimage:%@",NSStringFromCGRect(self.headimage.frame));
+//    NSLog(@"name:%@",NSStringFromCGRect(self.name.frame));
 }
 @end

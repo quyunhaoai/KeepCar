@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10FD95F20560D3C00B0A4E7 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */; };
+		C10FD96120560D8300B0A4E7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10FD96020560D8300B0A4E7 /* WebKit.framework */; };
+		C10FD9652056126C00B0A4E7 /* QYHproductXqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10FD9632056126C00B0A4E7 /* QYHproductXqViewController.m */; };
+		C10FD9662056126C00B0A4E7 /* QYHproductXqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C10FD9642056126C00B0A4E7 /* QYHproductXqViewController.xib */; };
 		C1119670205233A800465933 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C111966F205233A800465933 /* LSViewController.m */; };
 		C111967520523F7900465933 /* icon_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = C111967420523F7800465933 /* icon_launcher.png */; };
 		C119C7322054FE120012E737 /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C119C7312054FE120012E737 /* MeTableViewController.m */; };
@@ -21,9 +25,13 @@
 		C16388E02055704B00A98D1C /* QYHShoppingcartTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16388DF2055704B00A98D1C /* QYHShoppingcartTableViewController.xib */; };
 		C16388E3205577D800A98D1C /* QYHShoppingCartBasseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388E2205577D800A98D1C /* QYHShoppingCartBasseMode.m */; };
 		C16388E6205577F200A98D1C /* QYHShoppingListMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C16388E5205577F200A98D1C /* QYHShoppingListMode.m */; };
+		C16A07192056833F00CE87A2 /* QYHCustomXqTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16A07172056833E00CE87A2 /* QYHCustomXqTableViewCell.m */; };
+		C16A071A2056833F00CE87A2 /* QYHCustomXqTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16A07182056833E00CE87A2 /* QYHCustomXqTableViewCell.xib */; };
 		C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */; };
 		C16FA3FB2053E38000E3FFD8 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */; };
 		C16FA3FC2053E38000E3FFD8 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */; };
+		C17AAB332056318200A38EAF /* QYHXqBassesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C17AAB322056318100A38EAF /* QYHXqBassesModel.m */; };
+		C17AAB36205631E200A38EAF /* QYHXqModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C17AAB35205631E200A38EAF /* QYHXqModel.m */; };
 		C19890432051063F00590F6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890422051063F00590F6C /* AppDelegate.m */; };
 		C19890462051063F00590F6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19890452051063F00590F6C /* ViewController.m */; };
 		C19890492051063F00590F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19890472051063F00590F6C /* Main.storyboard */; };
@@ -201,6 +209,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C10FD95D20560D3C00B0A4E7 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		C10FD96020560D8300B0A4E7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C10FD9622056126B00B0A4E7 /* QYHproductXqViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHproductXqViewController.h; sourceTree = "<group>"; };
+		C10FD9632056126C00B0A4E7 /* QYHproductXqViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHproductXqViewController.m; sourceTree = "<group>"; };
+		C10FD9642056126C00B0A4E7 /* QYHproductXqViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHproductXqViewController.xib; sourceTree = "<group>"; };
 		C111966E205233A800465933 /* LSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
 		C111966F205233A800465933 /* LSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		C111967420523F7800465933 /* icon_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_launcher.png; sourceTree = "<group>"; };
@@ -224,11 +238,18 @@
 		C16388E2205577D800A98D1C /* QYHShoppingCartBasseMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHShoppingCartBasseMode.m; sourceTree = "<group>"; };
 		C16388E4205577F200A98D1C /* QYHShoppingListMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHShoppingListMode.h; sourceTree = "<group>"; };
 		C16388E5205577F200A98D1C /* QYHShoppingListMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHShoppingListMode.m; sourceTree = "<group>"; };
+		C16A07162056833E00CE87A2 /* QYHCustomXqTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHCustomXqTableViewCell.h; sourceTree = "<group>"; };
+		C16A07172056833E00CE87A2 /* QYHCustomXqTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHCustomXqTableViewCell.m; sourceTree = "<group>"; };
+		C16A07182056833E00CE87A2 /* QYHCustomXqTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYHCustomXqTableViewCell.xib; sourceTree = "<group>"; };
 		C16FA3F52053D0AF00E3FFD8 /* QYHcustomHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHcustomHeadView.h; sourceTree = "<group>"; };
 		C16FA3F62053D0AF00E3FFD8 /* QYHcustomHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHcustomHeadView.m; sourceTree = "<group>"; };
 		C16FA3F82053E38000E3FFD8 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		C16FA3F92053E38000E3FFD8 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		C16FA3FA2053E38000E3FFD8 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		C17AAB312056318100A38EAF /* QYHXqBassesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHXqBassesModel.h; sourceTree = "<group>"; };
+		C17AAB322056318100A38EAF /* QYHXqBassesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHXqBassesModel.m; sourceTree = "<group>"; };
+		C17AAB34205631E200A38EAF /* QYHXqModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYHXqModel.h; sourceTree = "<group>"; };
+		C17AAB35205631E200A38EAF /* QYHXqModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYHXqModel.m; sourceTree = "<group>"; };
 		C198903E2051063F00590F6C /* KeepCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19890412051063F00590F6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C19890422051063F00590F6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -544,6 +565,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10FD96120560D8300B0A4E7 /* WebKit.framework in Frameworks */,
 				C198920920510FB200590F6C /* UIKit.framework in Frameworks */,
 				C198920720510FA600590F6C /* Foundation.framework in Frameworks */,
 			);
@@ -566,6 +588,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10FD96720561D9400B0A4E7 /* Xqing */ = {
+			isa = PBXGroup;
+			children = (
+				C17AAB3020561F1000A38EAF /* View */,
+				C10FD96920561DE700B0A4E7 /* Model */,
+				C10FD96820561DDC00B0A4E7 /* ControllerView */,
+			);
+			path = Xqing;
+			sourceTree = "<group>";
+		};
+		C10FD96820561DDC00B0A4E7 /* ControllerView */ = {
+			isa = PBXGroup;
+			children = (
+				C10FD9622056126B00B0A4E7 /* QYHproductXqViewController.h */,
+				C10FD9632056126C00B0A4E7 /* QYHproductXqViewController.m */,
+				C10FD9642056126C00B0A4E7 /* QYHproductXqViewController.xib */,
+			);
+			path = ControllerView;
+			sourceTree = "<group>";
+		};
+		C10FD96920561DE700B0A4E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C17AAB312056318100A38EAF /* QYHXqBassesModel.h */,
+				C17AAB322056318100A38EAF /* QYHXqBassesModel.m */,
+				C17AAB34205631E200A38EAF /* QYHXqModel.h */,
+				C17AAB35205631E200A38EAF /* QYHXqModel.m */,
+			);
+			name = Model;
+			path = "New Group/Model";
+			sourceTree = "<group>";
+		};
 		C16388D520556FBD00A98D1C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +637,16 @@
 				C16388DB20556FBE00A98D1C /* PPNumberButton.m */,
 			);
 			path = PPNumberButton;
+			sourceTree = "<group>";
+		};
+		C17AAB3020561F1000A38EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16A07162056833E00CE87A2 /* QYHCustomXqTableViewCell.h */,
+				C16A07172056833E00CE87A2 /* QYHCustomXqTableViewCell.m */,
+				C16A07182056833E00CE87A2 /* QYHCustomXqTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C19890352051063E00590F6C = {
@@ -703,6 +767,7 @@
 		C19890772051087D00590F6C /* FristPage首页 */ = {
 			isa = PBXGroup;
 			children = (
+				C10FD96720561D9400B0A4E7 /* Xqing */,
 				C198907D2051094E00590F6C /* ControllerView */,
 				C198907C2051094000590F6C /* View */,
 				C198907B2051090800590F6C /* Model */,
@@ -796,6 +861,8 @@
 		C198907F205109EF00590F6C /* ControllerView */ = {
 			isa = PBXGroup;
 			children = (
+				C10FD95D20560D3C00B0A4E7 /* WKWebViewController.h */,
+				C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */,
 				C1BD833C20524A1200947EEC /* QYHBaseViewController.h */,
 				C1BD833D20524A1300947EEC /* QYHBaseViewController.m */,
 				C198909820510B5F00590F6C /* QYHBaseNavigationViewController.h */,
@@ -932,6 +999,7 @@
 		C198920520510FA600590F6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C10FD96020560D8300B0A4E7 /* WebKit.framework */,
 				C198920820510FB200590F6C /* UIKit.framework */,
 				C198920620510FA600590F6C /* Foundation.framework */,
 			);
@@ -1506,6 +1574,7 @@
 			files = (
 				C198933F2051117600590F6C /* SVProgressHUD.bundle in Resources */,
 				C1D13D792052E15A00B379C7 /* QYHCustomTableViewCell.xib in Resources */,
+				C10FD9662056126C00B0A4E7 /* QYHproductXqViewController.xib in Resources */,
 				C1D13D742052C6F000B379C7 /* QYHheadView.xib in Resources */,
 				C198933C2051117600590F6C /* LICENSE.txt in Resources */,
 				C19892ED2051117600590F6C /* Info.plist in Resources */,
@@ -1523,6 +1592,7 @@
 				C19893222051117600590F6C /* README.md in Resources */,
 				C1BD83602052558900947EEC /* NewLaunchScreen.storyboard in Resources */,
 				C198939D205112B600590F6C /* LICENSE in Resources */,
+				C16A071A2056833F00CE87A2 /* QYHCustomXqTableViewCell.xib in Resources */,
 				C198939E205112B600590F6C /* README.md in Resources */,
 				C198904B2051063F00590F6C /* Assets.xcassets in Resources */,
 				C1BD8369205262FD00947EEC /* QYHLonginViewController.xib in Resources */,
@@ -1569,6 +1639,7 @@
 				C1A7AD1E20511BC200E78197 /* QYHShoppingcartTableViewController.m in Sources */,
 				C19890B320510C4400590F6C /* UIBarButtonItem+Item.m in Sources */,
 				C198930F2051117600590F6C /* MJRefreshBackGifFooter.m in Sources */,
+				C16A07192056833F00CE87A2 /* QYHCustomXqTableViewCell.m in Sources */,
 				C19892F42051117600590F6C /* NSArray+MASAdditions.m in Sources */,
 				C19892FB2051117600590F6C /* MJProperty.m in Sources */,
 				C19893A5205112B600590F6C /* SDWebImageManager.m in Sources */,
@@ -1602,6 +1673,7 @@
 				C1BD836C20527B6200947EEC /* QYHFristMode.m in Sources */,
 				C16388DC20556FBE00A98D1C /* PPTableViewCell.m in Sources */,
 				C198930A2051117600590F6C /* MJRefreshFooter.m in Sources */,
+				C10FD95F20560D3C00B0A4E7 /* WKWebViewController.m in Sources */,
 				C16FA3F72053D0AF00E3FFD8 /* QYHcustomHeadView.m in Sources */,
 				C1BAB17E2051826C006D4E84 /* AKTabBar.m in Sources */,
 				C1BD836F2052804500947EEC /* QYHLunbo.m in Sources */,
@@ -1613,6 +1685,7 @@
 				C19892F02051117600590F6C /* MASConstraintMaker.m in Sources */,
 				C19893052051117600590F6C /* QyhAlterView.m in Sources */,
 				C1BD835120524B5C00947EEC /* TAAbstractDotView.m in Sources */,
+				C10FD9652056126C00B0A4E7 /* QYHproductXqViewController.m in Sources */,
 				C19893162051117600590F6C /* MJRefreshConst.m in Sources */,
 				C19893482051117600590F6C /* M13ProgressViewMetro.m in Sources */,
 				C19893A6205112B600590F6C /* SDWebImagePrefetcher.m in Sources */,
@@ -1664,6 +1737,7 @@
 				C198931F2051117600590F6C /* AFURLResponseSerialization.m in Sources */,
 				C19893232051117600590F6C /* AFAutoPurgingImageCache.m in Sources */,
 				C19890B920510C4400590F6C /* UIView+frame.m in Sources */,
+				C17AAB36205631E200A38EAF /* QYHXqModel.m in Sources */,
 				C19890B420510C4400590F6C /* UIImage+Antialias.m in Sources */,
 				C198930C2051117600590F6C /* MJRefreshAutoGifFooter.m in Sources */,
 				C1BD835420524B5C00947EEC /* TAPageControl.m in Sources */,
@@ -1693,6 +1767,7 @@
 				C198930E2051117600590F6C /* MJRefreshAutoStateFooter.m in Sources */,
 				C19892FF2051117600590F6C /* NSObject+MJCoding.m in Sources */,
 				C19893192051117600590F6C /* UIScrollView+MJRefresh.m in Sources */,
+				C17AAB332056318200A38EAF /* QYHXqBassesModel.m in Sources */,
 				C19890512051063F00590F6C /* main.m in Sources */,
 				C19893402051117600590F6C /* SVProgressHUD.m in Sources */,
 				C19892FE2051117600590F6C /* NSObject+MJClass.m in Sources */,

@@ -10,7 +10,7 @@
 
 @interface QYHFrist_hot : NSObject
 /** <#注释#> */
-@property (nonatomic,strong) NSString* ID;
+@property (nonatomic,strong) NSString* id;
 /** <#注释#> */
 @property (nonatomic,strong) NSString* product_name;
 /** <#注释#> */

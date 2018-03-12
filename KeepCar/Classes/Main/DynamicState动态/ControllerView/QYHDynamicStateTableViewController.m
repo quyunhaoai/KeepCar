@@ -12,6 +12,8 @@
 #import "QYHDynamicstateBassInfo.h"
 #import "QYHDsXqTableViewCell.h"
 #import "QYHDStableInfo.h"
+#import "QYHproductXqViewController.h"
+#import "WKWebViewController.h"
 static NSString *const cellID = @"Dsxiangqing";
 @interface QYHDynamicStateTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *DSTableView;
@@ -76,5 +78,10 @@ static NSString *const cellID = @"Dsxiangqing";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    WKWebViewController *WebView = [[WKWebViewController alloc]init];
+    WebView.loadType = loadWebURLString;
+    WebView.URLString = ((QYHDStableInfo *)self.bass.date[indexPath.row]).link_xq;
+    WebView.isNavHidden = NO;
+    [self.navigationController pushViewController:WebView animated:YES];
 }
 @end

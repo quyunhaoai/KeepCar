@@ -32,18 +32,25 @@
     // Drawing code
 }
 */
+-(SDCycleScrollView *)cycleScrollView
+{
+    if (!_cycleScrollView) {
+    _cycleScrollView = [[SDCycleScrollView alloc] initWithFrame:CGRectMake(0, 0, QYHScreenW, _lubo.qyh_height)];
+    _cycleScrollView.showPageControl = YES;
+    _cycleScrollView.currentPageDotColor = QYHColor(0.0, 150.0, 256.0);
+    _cycleScrollView.pageDotColor = [UIColor whiteColor];
+    _cycleScrollView.pageControlDotSize = CGSizeMake(100, 80);
+    _cycleScrollView.pageControlBottomOffset = 0.5;
+    }
+    return _cycleScrollView;
+}
 -(void)awakeFromNib
 {
     [super awakeFromNib];
-    self.cycleScrollView = [[SDCycleScrollView alloc] initWithFrame:CGRectMake(0, 0, QYHScreenW, _lubo.qyh_height)];
-    self.cycleScrollView.showPageControl = YES;
-    self.cycleScrollView.currentPageDotColor = QYHColor(0.0, 150.0, 256.0);
-    self.cycleScrollView.pageDotColor = [UIColor whiteColor];
-    self.cycleScrollView.pageControlDotSize = CGSizeMake(100, 80);
-    self.cycleScrollView.pageControlBottomOffset = 1.0;
+    
     [self.lubo addSubview:self.cycleScrollView];
-    NSLog(@"%@",NSStringFromCGRect(self.lubo.frame));
-    NSLog(@"%@",NSStringFromCGRect(self.Types.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.lubo.frame));
+//    NSLog(@"%@",NSStringFromCGRect(self.Types.frame));
 }
 -(void)setUrlArray:(NSArray *)urlArray
 {

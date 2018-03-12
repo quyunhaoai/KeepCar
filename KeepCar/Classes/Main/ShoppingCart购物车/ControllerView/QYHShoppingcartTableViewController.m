@@ -11,6 +11,7 @@
 #import "QYHShoppingCartBasseMode.h"
 #import "MJExtension.h"
 #import "MJRefresh.h"
+#import "UIBarButtonItem+Item.h"
 @interface QYHShoppingcartTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** <#注释#> */
 @property (nonatomic,strong) QYHShoppingCartBasseMode* shoppingMode;
@@ -34,7 +35,11 @@ static NSString *const cellID = @"PPcell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem alloc]initWithTitle:@"编辑" style: target:self action: ]
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStylePlain target:self action:@selector(editTable)];
+}
+-(void)editTable{
+    
 }
 -(void)loadData
 {

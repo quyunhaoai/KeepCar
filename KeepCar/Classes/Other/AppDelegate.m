@@ -23,23 +23,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     /*创建跟控制器和窗口*/
-    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"NewLaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"NewLaunchScreen"];
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = viewController;
-    [self.window makeKeyAndVisible];
-    
-    launchView = viewController.view;
-    UILabel *lable = [launchView viewWithTag:11];
-    lable.hidden = NO;
-    UIButton *JumpButton = [launchView viewWithTag:10];
-    [JumpButton addTarget:self action:@selector(removeLauchView) forControlEvents:UIControlEventTouchUpInside];
-    JumpButton.hidden = NO;
+//    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"NewLaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"NewLaunchScreen"];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.rootViewController = viewController;
+//    [self.window makeKeyAndVisible];
+//
+//    launchView = viewController.view;
+//    UILabel *lable = [launchView viewWithTag:11];
+//    lable.hidden = NO;
+//    UIButton *JumpButton = [launchView viewWithTag:10];
+//    [JumpButton addTarget:self action:@selector(removeLauchView) forControlEvents:UIControlEventTouchUpInside];
+//    JumpButton.hidden = NO;
     
 //    CustomerViewController *AdVC = [[CustomerViewController alloc] init];
-//    QYHCustomViewController *AdVC = [[QYHCustomViewController alloc] init];
-//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//    self.window.rootViewController = AdVC;
-//    [self.window makeKeyAndVisible];
+    QYHCustomViewController *AdVC = [[QYHCustomViewController alloc] init];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = AdVC;
+    [self.window makeKeyAndVisible];
     /*开始监控网络状态*/
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     

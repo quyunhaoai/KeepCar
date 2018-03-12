@@ -16,6 +16,8 @@
 #import "QYHCustomTableViewCell.h"
 #import "CustomCollectionViewCell.h"
 #import "QYHFrist_types.h"
+#import "WKWebViewController.h"
+#import "QYHproductXqViewController.h"
 NSString *const cellID = @"hao";
 static NSString *const ID = @"cellid";
 static NSInteger const  cols = 4;
@@ -47,7 +49,6 @@ CGFloat const qyhItemH = 100;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self loadData];
     _headView= [QYHheadView qyh_viewFromXib];
     self.TableView.tableHeaderView = _headView;
@@ -59,14 +60,19 @@ CGFloat const qyhItemH = 100;
         [weakSelf loadData];
     }];
     self.TableView.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
+    _headView.cycleScrollView.clickItemOperationBlock = ^(NSInteger currentIndex) {
+        NSLog(@"点击：%zd",currentIndex);
+        WKWebViewController *web = [[WKWebViewController alloc] init];
+        web.isNavHidden = NO;
+        QYHLunbo *lunbo = (QYHLunbo *)[weakSelf.fristMode.lunbo objectAtIndex:currentIndex];
+        [web loadWebURLSring:lunbo.url];
+        [weakSelf.navigationController pushViewController:web animated:YES];
+    };
 }
 -(void)loadData
 {
     [[QYHNetWork sharedManager] requestWithMethod:GET WithPath:@"index.php/api.php?m=api&c=Index&a=index" WithParams:nil WithSuccessBlock:^(NSDictionary *dic) {
         _fristMode =  [QYHFristMode modelObjectWithDictionary:dic];
-//        NSLog(@"%@",fristMode.lunbo[0]);
-//        QYHLunbo *lunbo =(QYHLunbo *)fristMode.lunbo[0];
-//        NSLog(@"%@",lunbo.url);
         NSMutableArray *mutableArray = [NSMutableArray arrayWithCapacity:5];
         for (QYHLunbo* obj in _fristMode.lunbo) {
             NSString *temUrl = [NSString stringWithFormat:@"%@%@",QYHCommonURL,obj.thumb];
@@ -76,11 +82,19 @@ CGFloat const qyhItemH = 100;
         if ((self.fristMode.types.count % 4)  != 0) {
             int a = (self.fristMode.types.count % 4);
             for (int i = 0; i<a; i++) {
+                if (i == 0) {
+                    QYHFrist_types *type = [[QYHFrist_types alloc]init];
+                    type.type_title = @"汽车险";
+                    type.url_link = @"qcx";
+                    type.thumb = ((QYHFrist_types *)[self.fristMode.types firstObject]).thumb;
+                    [self.fristMode.types addObject:type];
+                }else{
                 QYHFrist_types *type = [[QYHFrist_types alloc]init];
                 type.type_title = @"";
                 type.url_link = @"";
                 type.thumb = @"";
                 [self.fristMode.types addObject:type];
+                }
             }
         }
         [self.TableView reloadData];
@@ -88,7 +102,6 @@ CGFloat const qyhItemH = 100;
         [self.TableView.mj_header endRefreshing];
     } WithFailurBlock:^(NSError *error) {
         NSLog(@"error=%@",error);
-//        [self.view showToast:self.view duration:2.0 position:@"center"];
         [self.view makeToast:@"网络加载失败" duration:2.0 position:@"bottom"];
     }];
 }
@@ -110,29 +123,26 @@ CGFloat const qyhItemH = 100;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    QYHproductXqViewController *xqing = [[QYHproductXqViewController alloc]init];
+    QYHFrist_hot *hot =(QYHFrist_hot *)self.fristMode.hot[indexPath.row];
+    
+    xqing.product_id = hot.id;
+    [self.navigationController pushViewController:xqing animated:YES];
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    return 490.0;
-//}
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
 {
     return 445.0f;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return QYHHeadMarin;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0.0;
-}
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *view = [[UIView alloc]init];
-    view.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
-    return view;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return QYHHeadMarin;
+//}
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    UIView *view = [[UIView alloc]init];
+//    view.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
+//    return view;
+//}
 -(void)setupTypesView
 {
     /*
@@ -162,15 +172,6 @@ CGFloat const qyhItemH = 100;
     
     [collectionview registerNib:[UINib nibWithNibName:NSStringFromClass([CustomCollectionViewCell class]) bundle:nil] forCellWithReuseIdentifier:ID];
     self.collection = collectionview;
-    /**
-     _CollectionData = [NSMutableArray array];
-     for (int i = 0; i < 12; i ++) {
-     person *head = [[person alloc] init];
-     head.iconUrl = @"defaultUserIcon";
-     head.name = [NSString stringWithFormat:@"qyh%d",i];
-     [_CollectionData addObject:head];
-     }
-     **/
 }
 #pragma mark UIcollectionViewDataSource
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -185,6 +186,11 @@ CGFloat const qyhItemH = 100;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%s",__FUNCTION__);    
+    NSLog(@"%s",__FUNCTION__);
+    WKWebViewController *web = [[WKWebViewController alloc] init];
+    web.isNavHidden = NO;
+    QYHFrist_types *lunbo = (QYHFrist_types *)[self.fristMode.types objectAtIndex:indexPath.row];
+    [web loadWebURLSring:lunbo.url_link];
+    [self.navigationController pushViewController:web animated:YES];
 }
 @end
