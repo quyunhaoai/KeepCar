@@ -22,7 +22,7 @@ NSString *const cellID = @"hao";
 static NSString *const ID = @"cellid";
 static NSInteger const  cols = 4;
 static CGFloat const mar = 1;
-CGFloat const qyhItemH = 100;
+CGFloat const qyhItemH = 109;
 #define itemKH     ([UIScreen mainScreen].bounds.size.width - (cols - mar))/cols
 @interface QYHFristPageViewController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 /** headview */
@@ -42,15 +42,26 @@ CGFloat const qyhItemH = 100;
         
         [self presentViewController:loginVC animated:YES completion:nil];
     }
+#ifdef __IPHONE_11_0
+//    if ([self.TableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+//        self.TableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    }
+#endif
 }
 -(void)viewDidLayoutSubviews
 {
     NSLog(@"headView:%@",NSStringFromCGRect(self.headView.frame));
+    NSLog(@"table:%@",NSStringFromCGRect(self.TableView.frame));
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"viewOffsetY:%f",[self viewOffsetY]);
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, QYHScreenW, 0)];
+    [self.view addSubview:view];
     [self loadData];
     _headView= [QYHheadView qyh_viewFromXib];
+    NSLog(@"headView:%@",NSStringFromCGRect(_headView.frame));
     self.TableView.tableHeaderView = _headView;
     [self.TableView registerNib:[UINib nibWithNibName:@"QYHCustomTableViewCell" bundle:nil] forCellReuseIdentifier:cellID];
     [self setupTypesView];
@@ -68,6 +79,22 @@ CGFloat const qyhItemH = 100;
         [web loadWebURLSring:lunbo.url];
         [weakSelf.navigationController pushViewController:web animated:YES];
     };
+//    if (@available(iOS 7.0,*)) {
+//        /* 系统版本 >= version */
+////        self.TableView.translatesAutoresizingMaskIntoConstraints = NO;
+//        self.automaticallyAdjustsScrollViewInsets = NO;
+//        self.TableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//        self.TableView.contentInsetAdjustmentBehavior
+//    }else{
+//        /* 系统版本 <  */
+//
+//    }
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    if (@available(iOS 11.0, *)) {
+        self.TableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }else{
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 -(void)loadData
 {
@@ -131,18 +158,28 @@ CGFloat const qyhItemH = 100;
 }
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
 {
-    return 445.0f;
+    return QYHHeadMarin;
 }
-//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    return QYHHeadMarin;
-//}
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return QYHHeadMarin;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
 //    UIView *view = [[UIView alloc]init];
 //    view.backgroundColor = [UIColor colorWithRed:.93f green:.93f blue:.956f alpha:1.f];
-//    return view;
-//}
+//    view.backgroundColor = [UIColor redColor];
+//    view.frame = CGRectMake(0, 0, QYHScreenW, 0);
+    return nil;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return nil;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.1f;
+}
+
 -(void)setupTypesView
 {
     /*

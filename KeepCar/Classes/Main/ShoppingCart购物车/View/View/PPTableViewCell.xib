@@ -25,6 +25,9 @@
                         </constraints>
                         <state key="normal" image="icon_cart_radio_normal"/>
                         <state key="selected" image="icon_cart_radio"/>
+                        <connections>
+                            <action selector="selectAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n1O-zN-IgN"/>
+                        </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsJ-pE-wea">
                         <rect key="frame" x="45" y="10" width="70" height="52.5"/>
@@ -66,6 +69,7 @@
                 <outlet property="images" destination="rsJ-pE-wea" id="rDg-t6-ZJ0"/>
                 <outlet property="price" destination="0J5-Q1-bpr" id="yaj-rN-8f3"/>
                 <outlet property="product_name" destination="JjY-f4-HqJ" id="gj9-2b-qXI"/>
+                <outlet property="selectButton" destination="b5p-cN-vV9" id="chO-tN-DMb"/>
             </connections>
             <point key="canvasLocation" x="33" y="81.5"/>
         </tableViewCell>

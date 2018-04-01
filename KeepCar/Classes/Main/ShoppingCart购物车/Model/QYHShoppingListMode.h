@@ -25,5 +25,10 @@
 @property (nonatomic,strong) NSString* priceall;
 /** <#注释#> */
 @property (nonatomic,strong) NSString* thumb;
-
+/** <#注释#> */
+@property (nonatomic,assign) CGFloat heji;
+/** select */
+@property (nonatomic,assign) BOOL isSelect;
+-(instancetype)initWithDictionary:(NSDictionary *)dict;
++(instancetype)appWithDictionary:(NSDictionary *)dict;
 @end

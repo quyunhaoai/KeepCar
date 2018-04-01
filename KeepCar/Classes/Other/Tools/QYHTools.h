@@ -38,6 +38,7 @@
 + (id)UserDefaultsObjectForKey:(NSString *)key;
 /*对象转字符串*/
 -(NSString*)DataTOjsonString:(id)object;
+- (NSData *)dictionaryToJson:(NSDictionary *)dic;
 /*删除用户偏好设置*/
 + (void)removeUserDataWithkey:(NSString*)key;
 /*对象归档偏好设置*/

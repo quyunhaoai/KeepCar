@@ -123,6 +123,7 @@
 //                [weakSelf dismissLoading];
             }
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+            NSLog(@"json:%@",dic);
             success(dic);
             
         } else {

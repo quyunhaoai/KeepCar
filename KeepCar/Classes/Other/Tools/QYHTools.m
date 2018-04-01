@@ -180,6 +180,12 @@
     }
     return jsonString;
 }
+- (NSData *)dictionaryToJson:(NSDictionary *)dic
+{
+    NSError *parseError =nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    return jsonData;
+}
 #pragma mark 文件管理
 /*读程序目录而准备*/
 +(NSString *)bundlePath:(NSString *)fileName {

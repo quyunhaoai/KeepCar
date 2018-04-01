@@ -317,7 +317,9 @@ static void *WkwebBrowserContext = &WkwebBrowserContext;
 }
 
 //跳转失败的时候调用
--(void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{}
+-(void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    
+}
 
 //进度条
 -(void)webViewWebContentProcessDidTerminate:(WKWebView *)webView{}

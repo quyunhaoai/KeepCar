@@ -68,16 +68,23 @@
     
     [self setSelectedIconColors:@[[UIColor clearColor],
                                   [UIColor clearColor]]];
-    [self setTextColor:[UIColor blackColor]];
-    [self setSelectedTextColor:[UIColor blueColor]];
-    [self setBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]]];
+    [self setTextColor:QYHColor(102, 102, 102)];
+    [self setSelectedTextColor:QYHColor(0, 191, 243)];
+    UIImage *image =[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]];
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self setBackgroundImage:image];
+    [self setSelectedBackgroundImage:image];
+    
     
     [self setTabEdgeColor:[UIColor clearColor]];
     [self setTabStrokeColor:[UIColor clearColor]];
-    
+    self.iconShadowColor = [UIColor clearColor];
     self.iconGlossyIsHidden = YES;
+    
+    self.selectedIconOuterGlowColor = [UIColor clearColor];
+    self.tabStrokeColor = [UIColor clearColor];
+    self.selectedIconOuterGlowColor = [UIColor clearColor];
 
-    [self setSelectedBackgroundImage:[QYHTools createImageWithColor:[QYHTools hexStringToColor:@"#FFFFFF"]]];
 //    self.delegate = self;
 
 }

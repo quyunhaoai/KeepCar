@@ -14,4 +14,18 @@
              @"data" : [QYHShoppingListMode class],
              };
 }
+-(instancetype)initWithDictionary:(NSDictionary *)dict{
+    if (self = [super init]) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
+
++(instancetype)appWithDictionary:(NSDictionary *)dict{
+    return [[self alloc]initWithDictionary:dict];
+}
+-(id)valueForUndefinedKey:(NSString *)key
+{
+    return @"";
+}
 @end

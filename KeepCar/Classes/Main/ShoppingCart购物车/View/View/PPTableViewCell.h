@@ -12,7 +12,10 @@
 @interface PPTableViewCell : UITableViewCell
 @property (nonatomic, strong) QYHShoppingListMode *shoppingModel;
 @property (nonatomic, strong) PPTableViewModel *model;
+@property (nonatomic, assign) float qyhnumber;
 @property (nonatomic, copy) void(^resultBlock)(NSInteger number);
+@property (strong, nonatomic) IBOutlet UIButton *selectButton;
+
 @end
 
 

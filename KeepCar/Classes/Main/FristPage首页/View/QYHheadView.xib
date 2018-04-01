@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QYHheadView"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QYHheadView">
-            <rect key="frame" x="0.0" y="0.0" width="524" height="445"/>
+            <rect key="frame" x="0.0" y="0.0" width="524" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3Q-8l-vXI">
-                    <rect key="frame" x="0.0" y="0.0" width="524" height="222.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="524" height="160"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-vl-3Is">
-                    <rect key="frame" x="0.0" y="222.5" width="524" height="222.5"/>
+                    <rect key="frame" x="0.0" y="160" width="524" height="160"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

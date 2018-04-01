@@ -12,5 +12,6 @@
 @interface QYHShoppingcartTableViewController : QYHBaseViewController
 @property (strong, nonatomic) IBOutlet UITableView *ShoppingTable;
 @property (strong, nonatomic) IBOutlet UIView *BottomView;
-
+/** select */
+@property (copy, nonatomic) void (^SelectAction)(BOOL isSelect);
 @end

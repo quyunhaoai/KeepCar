@@ -45,7 +45,9 @@
     [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
     [backButton sizeToFit];
-    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+    backButton.frame = CGRectMake(0, 0, 35, 35);
+    backButton.contentEdgeInsets = UIEdgeInsetsMake(-5, -10, -5, 0);
+    backButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
     [backButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     
     return  [[UIBarButtonItem alloc] initWithCustomView:backButton];

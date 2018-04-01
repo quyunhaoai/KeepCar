@@ -767,7 +767,6 @@
 		C19890772051087D00590F6C /* FristPage首页 */ = {
 			isa = PBXGroup;
 			children = (
-				C10FD96720561D9400B0A4E7 /* Xqing */,
 				C198907D2051094E00590F6C /* ControllerView */,
 				C198907C2051094000590F6C /* View */,
 				C198907B2051090800590F6C /* Model */,
@@ -841,6 +840,7 @@
 		C198907D2051094E00590F6C /* ControllerView */ = {
 			isa = PBXGroup;
 			children = (
+				C10FD96720561D9400B0A4E7 /* Xqing */,
 				C1A7AD2220511C2300E78197 /* QYHFristPageViewController.h */,
 				C1A7AD2320511C2300E78197 /* QYHFristPageViewController.m */,
 				C1BD83762052881D00947EEC /* QYHFristPageViewController.xib */,
@@ -1533,7 +1533,7 @@
 				TargetAttributes = {
 					C198903D2051063F00590F6C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					C19890552051064000590F6C = {
 						CreatedOnToolsVersion = 9.2;
@@ -1934,8 +1934,10 @@
 		C198906B2051064000590F6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hao zhang (JGQV989QSU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TC6P6VV3A6;
 				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/KeepCar/Classes/Third\"",
@@ -1946,8 +1948,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qyh.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1956,8 +1959,10 @@
 		C198906C2051064000590F6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: hao zhang (JGQV989QSU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TC6P6VV3A6;
 				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SRCROOT)/KeepCar/Classes/Third\"",
@@ -1968,8 +1973,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hao.KeepCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qyh.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

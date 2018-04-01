@@ -16,4 +16,6 @@
 /** data */
 @property (nonatomic,strong) NSMutableArray* data;
 
+-(instancetype)initWithDictionary:(NSDictionary *)dict;
++(instancetype)appWithDictionary:(NSDictionary *)dict;
 @end

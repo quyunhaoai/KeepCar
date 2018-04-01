@@ -35,12 +35,12 @@
 -(SDCycleScrollView *)cycleScrollView
 {
     if (!_cycleScrollView) {
-    _cycleScrollView = [[SDCycleScrollView alloc] initWithFrame:CGRectMake(0, 0, QYHScreenW, _lubo.qyh_height)];
+    _cycleScrollView = [[SDCycleScrollView alloc] initWithFrame:CGRectMake(0, 0, QYHScreenW, 220)];
     _cycleScrollView.showPageControl = YES;
     _cycleScrollView.currentPageDotColor = QYHColor(0.0, 150.0, 256.0);
     _cycleScrollView.pageDotColor = [UIColor whiteColor];
     _cycleScrollView.pageControlDotSize = CGSizeMake(100, 80);
-    _cycleScrollView.pageControlBottomOffset = 0.5;
+//    _cycleScrollView.pageControlBottomOffset = 0.5;
     }
     return _cycleScrollView;
 }
@@ -60,17 +60,6 @@
 -(void)setTypesArray:(NSArray *)TypesArray
 {
     _TypesArray = TypesArray;
-//    for (QYHFrist_types *type in TypesArray) {
-//
-//    }
-//    [TypesArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        QYHFrist_types *type = (QYHFrist_types *)obj;
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//        button.tag = idx;
-//        button.frame =CGRectMake(0, 0, 60, 60);
-//        [button setImage:nil forState:UIControlStateNormal];
-//        [self.Types addSubview:button];
-//    }];
 }
 -(void)layoutSubviews
 {
@@ -78,7 +67,8 @@
     NSLog(@"lubo:%@",NSStringFromCGRect(self.lubo.frame));
     NSLog(@"types:%@",NSStringFromCGRect(self.Types.frame));
     NSLog(@"self:%@",NSStringFromCGRect(self.frame));
-    self.lubo.qyh_height = 245.0;
-    self.Types.qyh_height = 245.0;
+//    self.lubo.qyh_height = 222.5;
+//    self.Types.qyh_height = 222.5;
+    self.qyh_height = 440;
 }
 @end
