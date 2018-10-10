@@ -119,6 +119,7 @@
 		667F8C05216DFB1A00B901E4 /* QYHLonginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667F8C03216DFB1900B901E4 /* QYHLonginViewController.m */; };
 		667F8C06216DFB1A00B901E4 /* QYHLonginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 667F8C04216DFB1900B901E4 /* QYHLonginViewController.xib */; };
 		667F8C0A216DFBFE00B901E4 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 667F8C09216DFBFE00B901E4 /* UIView+Toast.m */; };
+		66D5AFCE216E01AD00B24E51 /* BaseRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D5AFCC216E01AD00B24E51 /* BaseRefreshTableViewController.m */; };
 		C10FD95F20560D3C00B0A4E7 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */; };
 		C10FD96120560D8300B0A4E7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10FD96020560D8300B0A4E7 /* WebKit.framework */; };
 		C10FD9652056126C00B0A4E7 /* QYHproductXqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10FD9632056126C00B0A4E7 /* QYHproductXqViewController.m */; };
@@ -428,6 +429,8 @@
 		667F8C04216DFB1900B901E4 /* QYHLonginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYHLonginViewController.xib; sourceTree = "<group>"; };
 		667F8C08216DFBFE00B901E4 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		667F8C09216DFBFE00B901E4 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		66D5AFCC216E01AD00B24E51 /* BaseRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshTableViewController.m; sourceTree = "<group>"; };
+		66D5AFCD216E01AD00B24E51 /* BaseRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRefreshTableViewController.h; sourceTree = "<group>"; };
 		C10FD95D20560D3C00B0A4E7 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		C10FD96020560D8300B0A4E7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -965,11 +968,10 @@
 		667F8BFF216DF96000B901E4 /* 【全局】Global */ = {
 			isa = PBXGroup;
 			children = (
+				66D5AFCB216E012800B24E51 /* 【基类】BaseViewController */,
+				66D5AFCA216E00FF00B24E51 /* 【宏定义】Macros */,
 				C19890412051063F00590F6C /* AppDelegate.h */,
 				C19890422051063F00590F6C /* AppDelegate.m */,
-				C198920020510D7B00590F6C /* QYH.h */,
-				C198920220510D7B00590F6C /* QYHConst.h */,
-				C198920320510D7B00590F6C /* QYHConst.m */,
 				C198920120510D7B00590F6C /* QYH-PrefixHeader.pch */,
 			);
 			path = "【全局】Global";
@@ -1000,6 +1002,31 @@
 				667F8C09216DFBFE00B901E4 /* UIView+Toast.m */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		66D5AFCA216E00FF00B24E51 /* 【宏定义】Macros */ = {
+			isa = PBXGroup;
+			children = (
+				C198920020510D7B00590F6C /* QYH.h */,
+				C198920220510D7B00590F6C /* QYHConst.h */,
+				C198920320510D7B00590F6C /* QYHConst.m */,
+			);
+			path = "【宏定义】Macros";
+			sourceTree = "<group>";
+		};
+		66D5AFCB216E012800B24E51 /* 【基类】BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				66D5AFCD216E01AD00B24E51 /* BaseRefreshTableViewController.h */,
+				66D5AFCC216E01AD00B24E51 /* BaseRefreshTableViewController.m */,
+				C1BD833C20524A1200947EEC /* QYHBaseViewController.h */,
+				C1BD833D20524A1300947EEC /* QYHBaseViewController.m */,
+				C198909820510B5F00590F6C /* QYHBaseNavigationViewController.h */,
+				C198909A20510B6000590F6C /* QYHBaseNavigationViewController.m */,
+				C1A7AD592051323F00E78197 /* QYHBaseTableViewController.h */,
+				C1A7AD5A2051323F00E78197 /* QYHBaseTableViewController.m */,
+			);
+			path = "【基类】BaseViewController";
 			sourceTree = "<group>";
 		};
 		C10FD96720561D9400B0A4E7 /* Xqing */ = {
@@ -1250,14 +1277,8 @@
 			children = (
 				C10FD95D20560D3C00B0A4E7 /* WKWebViewController.h */,
 				C10FD95E20560D3C00B0A4E7 /* WKWebViewController.m */,
-				C1BD833C20524A1200947EEC /* QYHBaseViewController.h */,
-				C1BD833D20524A1300947EEC /* QYHBaseViewController.m */,
-				C198909820510B5F00590F6C /* QYHBaseNavigationViewController.h */,
-				C198909A20510B6000590F6C /* QYHBaseNavigationViewController.m */,
 				C1A7AD5720512E5C00E78197 /* QYHCustomViewController.h */,
 				C1A7AD5620512E5C00E78197 /* QYHCustomViewController.m */,
-				C1A7AD592051323F00E78197 /* QYHBaseTableViewController.h */,
-				C1A7AD5A2051323F00E78197 /* QYHBaseTableViewController.m */,
 			);
 			path = ControllerView;
 			sourceTree = "<group>";
@@ -1645,6 +1666,7 @@
 				667E64C3216B3EC40079BA15 /* MJProperty.m in Sources */,
 				C1BD834020524A1900947EEC /* QYHBaseViewController.m in Sources */,
 				667E64CB216B3EC40079BA15 /* AKTab.m in Sources */,
+				66D5AFCE216E01AD00B24E51 /* BaseRefreshTableViewController.m in Sources */,
 				667E64FB216B3EC40079BA15 /* MASViewConstraint.m in Sources */,
 				C16388DE20556FBE00A98D1C /* PPNumberButton.m in Sources */,
 				667E64D0216B3EC40079BA15 /* UINavigationController+AKTabBarController.m in Sources */,

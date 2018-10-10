@@ -61,7 +61,6 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-//    self.navigationItem.title = @"";
 }
 
 - (CGFloat)viewOffsetY
