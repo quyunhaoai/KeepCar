@@ -1126,14 +1126,6 @@
 		C19890732051079A00590F6C /* 【主类】Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C1989074205107B200590F6C /* Main */,
-			);
-			path = "【主类】Classes";
-			sourceTree = "<group>";
-		};
-		C1989074205107B200590F6C /* Main */ = {
-			isa = PBXGroup;
-			children = (
 				667F8C00216DFB1900B901E4 /* Login登录 */,
 				C198907E205109EF00590F6C /* main主要 */,
 				C198907A205108A500590F6C /* Me我的 */,
@@ -1141,7 +1133,7 @@
 				C19890782051089300590F6C /* DynamicState动态 */,
 				C19890772051087D00590F6C /* FristPage首页 */,
 			);
-			path = Main;
+			path = "【主类】Classes";
 			sourceTree = "<group>";
 		};
 		C1989075205107C000590F6C /* 【第三方】Third */ = {
