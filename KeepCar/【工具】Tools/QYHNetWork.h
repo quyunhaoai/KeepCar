@@ -6,9 +6,8 @@
 //  Copyright © 2016 QYH. All rights reserved.
 //
 
-//#import <AFNetworking/AFNetworking.h>
-//#import <AFNetworking.h>
 #import "AFNetworking.h"
+
 //请求成功回调block
 typedef void (^requestSuccessBlock)(NSDictionary *dic);
 
@@ -23,13 +22,18 @@ typedef enum {
     DELETE,
     HEAD
 } HTTPMethod;
+
 @interface QYHNetWork : AFHTTPSessionManager
+
 + (instancetype)sharedManager;
+
 + (instancetype)sharedNetworkToolsWithoutBaseUrl;
+
 - (void)requestWithMethod:(HTTPMethod)method
                         WithPath:(NSString *)path
                       WithParams:(NSDictionary*)params
                 WithSuccessBlock:(requestSuccessBlock)success
                  WithFailurBlock:(requestFailureBlock)failure;
 - (void)postWithUrl:(NSString *)url body:(NSData *)body showLoading:(BOOL)show success:(void(^)(NSDictionary *response))success failure:(void(^)(NSError *error))failure;
+
 @end
