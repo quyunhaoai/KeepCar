@@ -694,6 +694,15 @@
 			path = Catgory;
 			sourceTree = "<group>";
 		};
+		665CC242219C2388002AD803 /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C1A7AD5D2051411600E78197 /* QYHNetWork.h */,
+				C1A7AD5E2051411600E78197 /* QYHNetWork.m */,
+			);
+			path = NetRequest;
+			sourceTree = "<group>";
+		};
 		667E63AD216B3EC30079BA15 /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1533,11 +1542,10 @@
 		C1A7AD5C2051411600E78197 /* 【工具】Tools */ = {
 			isa = PBXGroup;
 			children = (
+				665CC242219C2388002AD803 /* NetRequest */,
 				665CC1F4219C1B85002AD803 /* Catgory */,
 				665CC1E3219C1A4D002AD803 /* 【打印路径】PrintPathTools */,
 				C19890A420510C4400590F6C /* Category */,
-				C1A7AD5D2051411600E78197 /* QYHNetWork.h */,
-				C1A7AD5E2051411600E78197 /* QYHNetWork.m */,
 				C1A7AD5F2051411600E78197 /* QYHTools.h */,
 				C1A7AD602051411600E78197 /* QYHTools.m */,
 			);
