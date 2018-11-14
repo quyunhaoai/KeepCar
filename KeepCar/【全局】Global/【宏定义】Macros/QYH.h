@@ -37,5 +37,6 @@
 
 
 #define bottomMargin (QYHiPhoneX ? 84 : 64)
+
 #endif /* QYH_h */
 

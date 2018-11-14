@@ -19,7 +19,7 @@
 #import "QYHConst.h"
 #import "UIView+frame.h"
 #import "UIView+Toast.h"
-
+#import "NSString+Common.h"
 #endif /* QYH_PrefixHeader_pch */
 /***********字体*************/
 #define QYHFont(x) [UIFont systemFontOfSize:x]
@@ -51,6 +51,7 @@
 #define QYHMainGCD(block) dispatch_async(dispatch_get_main_queue(),block)
 /***********输出*************/
 #define QYHFunc QYHLog(@"%s",__func__)
+#define CommonReturnAutoReleased(__v) (__v)
 
 #ifdef DEBUG // 调试
 
@@ -59,5 +60,6 @@
 #else // 发布
 
 #define QYHLog(...)
+
 
 #endif

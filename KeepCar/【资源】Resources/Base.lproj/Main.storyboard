@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="118"/>
+            <point key="canvasLocation" x="-306" y="-36"/>
         </scene>
         <!--Me Table View Controller-->
         <scene sceneID="TeE-8i-kQT">
@@ -401,11 +401,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Cs-pg-Znl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="-36"/>
+            <point key="canvasLocation" x="383" y="-36"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon_gray_right" width="12" height="12"/>
+        <image name="icon_gray_right" width="25" height="24"/>
         <image name="icon_head_default" width="40" height="40"/>
         <image name="icon_mine_info" width="32" height="32"/>
         <image name="iv_person_2" width="32" height="32"/>

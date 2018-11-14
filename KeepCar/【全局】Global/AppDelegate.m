@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     /*创建跟控制器和窗口*/
-    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"NewLaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"NewLaunchScreen"];
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
